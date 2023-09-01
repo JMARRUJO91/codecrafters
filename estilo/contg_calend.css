@@ -1,0 +1,93 @@
+
+/*----------------------------------CONTAGEM REGRESSIVA--------------------------------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contagem {
+    background-color: #00866E;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contagem h1 {
+    margin-top: 0;
+}
+
+.tempo {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+span {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/*----------------------------------CALENDARIO------------------------------------------------------------*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+    align-content: flex-end;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.calendario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+table th {
+    background-color: #00866E;
+    color: #fff;
+}
+
+table td {
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Adicione estilo para o dia com lembrete */
+.lembrete {
+    background-color: #ffcc00;
+    font-weight: bold;
+}
