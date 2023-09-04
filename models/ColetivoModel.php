@@ -6,10 +6,10 @@ public function __construct($pdo) {
     $this->pdo = $pdo;
     }
 
-public function criarColetivo($modalidade, $ano_olimpiada) {
-    $sql = "INSERT INTO coletivo (modalidade, ano_olimpiada) VALUES (?, ?)";
+public function criarColetivo($nomes, $equipe, $modalidade, $serie) {
+    $sql = "INSERT INTO coletivo (nomes, equipe, modalidade, serie) VALUES (?, ?)";
     $stmt = $this->pdo->prepare($sql);
-    $stmt->execute([$modalidade, $ano_olimpiada]);
+    $stmt->execute([$nomes, $equipe, $modalidade, $serie]);
     }
 
 public function listarColetivos() {
@@ -20,10 +20,10 @@ public function listarColetivos() {
 
     // Implementar métodos para atualizar e excluir coletivos
 
-    public function atualizarColetivo($id_coletivo, $modalidade, $ano_olimpiada){
-        $sql = "UPDATE coletivo SET modalidade = ?, ano_olimpiada = ? WHERE id_coletivo = ?";
+    public function atualizarColetivo($id_coletivo, $nomes, $equipe, $modalidade, $serie){
+        $sql = "UPDATE coletivo SET nomes = ?, equipe = ?, modalidade = ?, serie = ? WHERE id_coletivo = ?";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$modalidade, $ano_olimpiada, $id_coletivo]);
+        $stmt->execute([$nomes, $equipe, $modalidade, $serie, $id_coletivo]);
     }
     
 
