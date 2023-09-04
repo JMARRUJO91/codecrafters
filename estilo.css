@@ -6,9 +6,10 @@ body {
 
 .carousel {
     overflow: hidden;
-    position: relative;
-    height: 400px;
-    width: 800px;
+    position: relative ;
+    height: 450px;
+    width: 100%;
+    text-align: center;
 
 }
 
@@ -19,22 +20,22 @@ body {
 }
 
 .img1 {
-    height: auto;
-    height: 800px;
-    width:800px;
+    height: 450px;
+  
 }
 
 .img2 {
-    height: auto;
-    height: 800px;
-    width:800px;
+    height: 450px;
+    width: auto;
+  
 }
 
+
 .img3 {
-    height: auto;
-    height: 800px;
-    width:800px;
+    height: 450px;
+   
 }
+
 
 button {
     position: absolute;
