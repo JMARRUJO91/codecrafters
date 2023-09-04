@@ -5,18 +5,35 @@ body {
 }
 
 .carousel {
-    width: 100%;
     overflow: hidden;
     position: relative;
+    height: 400px;
+    width: 800px;
+
 }
 
 .slide {
     display: none;
+    height: 20px;
+    width:20px;
 }
 
-img {
-    width: 100%;
+.img1 {
     height: auto;
+    height: 800px;
+    width:800px;
+}
+
+.img2 {
+    height: auto;
+    height: 800px;
+    width:800px;
+}
+
+.img3 {
+    height: auto;
+    height: 800px;
+    width:800px;
 }
 
 button {
