@@ -1,32 +1,32 @@
 <?php
-require_once 'models/TreinadorModel.php';
+require_once 'models/AdmModel.php';
 
 
-class TreinadorController {
-    private $treinadorModel;
+class AdmController {
+    private $admModel;
 
     public function __construct($pdo) {
-        $this->treinadorModel = new TreinadorModel($pdo);
+        $this->admModel = new AdmModel($pdo);
     }
 
-    public function criarTreinador($nome2, $idade2, $nacionalidade2) {
-        $this->treinadorModel->criarTreinador($nome2, $idade2, $nacionalidade2);
+    public function criarAdm($nome, $email, $senha) {
+        $this->admModel->criarAdm($nome, $email, $senha);
     }
 
-    public function listarTreinadores() {
-        return $this->treinadorModel->listarTreinadores();
+    public function listarAdms() {
+        return $this->admModel->listarAdms();
     }
 
-    public function exibirListaTreinadores() {
-        $treinadores = $this->treinadorModel->listarTreinadores();
-        include 'views/treinadores/lista.php';
+    public function exibirListaAdms() {
+        $admes = $this->admModel->listarAdms();
+        include 'views/adms/lista.php';
     }
 
-    public function atualizarTreinador ($id_treinador, $nome2, $idade2, $nacionalidade2) {
-        $this->treinadorModel->atualizarTreinador($id_treinador, $nome2, $idade2, $nacionalidade2);
+    public function atualizarAdm ($id_adm, $nome, $email, $senha) {
+        $this->admModel->atualizarAdm($id_adm, $nome, $email, $senha);
     }
-    public function excluirTreinador ($id_treinador) {
-        $this->treinadorModel->excluirTreinador($id_treinador);
+    public function excluirAdm ($id_adm) {
+        $this->admModel->excluirAdm($id_adm);
     }
 }
 

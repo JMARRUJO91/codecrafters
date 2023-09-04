@@ -1,32 +1,32 @@
 <?php
-require_once 'models/TreinadorModel.php';
+require_once 'models/Model.php';
 
 
-class TreinadorController {
-    private $treinadorModel;
+class ContatoController {
+    private $contatoModel;
 
     public function __construct($pdo) {
-        $this->treinadorModel = new TreinadorModel($pdo);
+        $this->contatoModel = new ContatoModel($pdo);
     }
 
-    public function criarTreinador($nome2, $idade2, $nacionalidade2) {
-        $this->treinadorModel->criarTreinador($nome2, $idade2, $nacionalidade2);
+    public function criarContato($nome, $email, $idade, $telefone) {
+        $this->contatoModel->criarContato($nome, $email, $idade, $telefone);
     }
 
-    public function listarTreinadores() {
-        return $this->treinadorModel->listarTreinadores();
+    public function listarcontatos() {
+        return $this->contatoModel->listarcontatos();
     }
 
-    public function exibirListaTreinadores() {
-        $treinadores = $this->treinadorModel->listarTreinadores();
-        include 'views/treinadores/lista.php';
+    public function exibirListacontatos() {
+        $contatos = $this->contatoModel->listarcontatos();
+        include 'views/contatos/lista.php';
     }
 
-    public function atualizarTreinador ($id_treinador, $nome2, $idade2, $nacionalidade2) {
-        $this->treinadorModel->atualizarTreinador($id_treinador, $nome2, $idade2, $nacionalidade2);
+    public function atualizarContato ($id_contato, $nome, $email, $idade, $telefone) {
+        $this->contatoModel->atualizarContato($id_contato, $nome, $email, $idade, $telefone);
     }
-    public function excluirTreinador ($id_treinador) {
-        $this->treinadorModel->excluirTreinador($id_treinador);
+    public function excluirContato ($id_contato) {
+        $this->contatoModel->excluirContato($id_contato);
     }
 }
 

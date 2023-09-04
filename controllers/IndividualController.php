@@ -1,32 +1,32 @@
 <?php
-require_once 'models/TreinadorModel.php';
+require_once 'models/IndividualModel.php';
 
 
-class TreinadorController {
-    private $treinadorModel;
+class IndividualController {
+    private $individualModel;
 
     public function __construct($pdo) {
-        $this->treinadorModel = new TreinadorModel($pdo);
+        $this->individualModel = new IndividualModel($pdo);
     }
 
-    public function criarTreinador($nome2, $idade2, $nacionalidade2) {
-        $this->treinadorModel->criarTreinador($nome2, $idade2, $nacionalidade2);
+    public function criarIndividual($nome, $idade, $modalidade, $email, $cidade, $serie, $telefone) {
+        $this->individualModel->criarIndividual($nome, $idade, $modalidade, $email, $cidade, $serie, $telefone);
     }
 
-    public function listarTreinadores() {
-        return $this->treinadorModel->listarTreinadores();
+    public function listarIndividuais() {
+        return $this->individualModel->listarIndividuais();
     }
 
-    public function exibirListaTreinadores() {
-        $treinadores = $this->treinadorModel->listarTreinadores();
-        include 'views/treinadores/lista.php';
+    public function exibirListaIndividuais() {
+        $individuais = $this->individualModel->listarIndividuais();
+        include 'views/individuais/lista.php';
     }
 
-    public function atualizarTreinador ($id_treinador, $nome2, $idade2, $nacionalidade2) {
-        $this->treinadorModel->atualizarTreinador($id_treinador, $nome2, $idade2, $nacionalidade2);
+    public function atualizarIndividual ($id_treinador, $nome, $idade, $modalidade, $email, $cidade, $serie, $telefone) {
+        $this->individualModel->atualizarIndividual($id_individual, $nome, $idade, $modalidade, $email, $cidade, $serie, $telefone);
     }
-    public function excluirTreinador ($id_treinador) {
-        $this->treinadorModel->excluirTreinador($id_treinador);
+    public function excluirIndividual ($id_individual) {
+        $this->individualModel->excluirIndividual($id_individual);
     }
 }
 

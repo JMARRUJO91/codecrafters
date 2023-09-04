@@ -1,32 +1,33 @@
 <?php
-require_once 'models/TreinadorModel.php';
+require_once 'models/ColetivoModel.php';
 
 
-class TreinadorController {
-    private $treinadorModel;
+class ColetivoController {
+    private $coletivoModel;
 
     public function __construct($pdo) {
-        $this->treinadorModel = new TreinadorModel($pdo);
+        $this->coletivoModel = new ColetivoModel($pdo);
     }
 
-    public function criarTreinador($nome2, $idade2, $nacionalidade2) {
-        $this->treinadorModel->criarTreinador($nome2, $idade2, $nacionalidade2);
+    public function criarColetivo($nomes, $equipe, $modalidade, $serie) {
+        $this->ColetivoModel->criarColetivo($nomes, $equipe, $modalidade, $serie);
     }
 
-    public function listarTreinadores() {
-        return $this->treinadorModel->listarTreinadores();
+    public function listarColetivos() {
+        return $this->coletivoModel->listarColetivos();
     }
 
-    public function exibirListaTreinadores() {
-        $treinadores = $this->treinadorModel->listarTreinadores();
-        include 'views/treinadores/lista.php';
+    public function exibirListaColetivos() {
+        $coletivos = $this->
+        Model->listarColetivos();
+        include 'views/coletivos/lista.php';
     }
 
-    public function atualizarTreinador ($id_treinador, $nome2, $idade2, $nacionalidade2) {
-        $this->treinadorModel->atualizarTreinador($id_treinador, $nome2, $idade2, $nacionalidade2);
+    public function atualizarColetivo ($id_coletivo, $nomes, $equipe, $modalidade, $serie) {
+        $this->coletivoModel->atualizarColetivo($id_coletivo, $nomes, $equipe, $modalidade, $serie);
     }
-    public function excluirTreinador ($id_treinador) {
-        $this->treinadorModel->excluirTreinador($id_treinador);
+    public function excluirColetivo ($id_coletivo) {
+        $this->coletivoModel->excluirColetivo($id_coletivo);
     }
 }
 
