@@ -1,0 +1,16 @@
+.header{
+height: 150px;
+width:100%;
+flex-shrink: 0;
+background: #F00;
+}
+
+.aside{
+        grid-area: barra-lateral;
+        background-color: rgb(255, 0, 191);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
