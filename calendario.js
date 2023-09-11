@@ -1,50 +1,46 @@
-// Array de objetos para representar os dias do mês com lembretes
-const lembretes = [
-    { dia: 16, mes: 9, ano: 2023, texto: "Lembrete no dia 16/10/2023" },
-    // Adicione mais lembretes conforme necessário
-];
+document.addEventListener("DOMContentLoaded", function () {
+    const countdownDate = new Date("2023-10-10T00:00:00Z").getTime();
 
-// Função para adicionar lembretes ao calendário
-function adicionarLembretes() {
-    const celulas = document.querySelectorAll("td");
+    function updateCountdown() {
+        const currentDate = new Date().getTime();
+        const timeLeft = countdownDate - currentDate;
 
-    lembretes.forEach((lembrete) => {
-        const dataLembrete = new Date(lembrete.ano, lembrete.mes, lembrete.dia);
-        const dia = dataLembrete.getDate();
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-        celulas.forEach((celula) => {
-            if (parseInt(celula.textContent) === dia) {
-                celula.classList.add("lembrete");
-                celula.title = lembrete.texto;
-            }
-        });
-    });
-}
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
+    }
 
-// Função para preencher os dias do mês (exemplo simples)
-function preencherDias() {
-    const tabela = document.querySelector("tbody");
-    const dataAtual = new Date();
-    const ano = dataAtual.getFullYear();
-    const mes = dataAtual.getMonth();
-    const primeiroDia = new Date(ano, mes, 1);
-    const ultimoDia = new Date(ano, mes + 1, 0);
+    function createCalendar() {
+        const calendar = document.getElementById("calendar");
+        const currentDate = new Date();
+        const currentMonth = currentDate.getMonth();
+        const daysInMonth = new Date(currentDate.getFullYear(), currentMonth + 1, 0).getDate();
+        const firstDayOfMonth = new Date(currentDate.getFullYear(), currentMonth, 1).getDay();
 
-    for (let dia = 1; dia <= ultimoDia.getDate(); dia++) {
-        const celula = document.createElement("td");
-        celula.textContent = dia;
-
-        // Adicione classes para os fins de semana (sábado e domingo)
-        if (primeiroDia.getDay() === 0) {
-            celula.classList.add("domingo");
-        } else if (primeiroDia.getDay() === 6) {
-            celula.classList.add("sabado");
+        for (let i = 0; i < firstDayOfMonth; i++) {
+            const emptyCell = document.createElement("div");
+            emptyCell.classList.add("date-cell", "disabled");
+            calendar.appendChild(emptyCell);
         }
 
-        tabela.appendChild(celula);
-        primeiroDia.setDate(primeiroDia.getDate() + 1);
+        for (let i = 1; i <= daysInMonth; i++) {
+            const dateCell = document.createElement("div");
+            dateCell.textContent = i;
+            dateCell.classList.add("date-cell");
+            if (i === currentDate.getDate() && currentMonth === currentDate.getMonth()) {
+                dateCell.classList.add("current-day");
+            }
+            calendar.appendChild(dateCell);
+        }
     }
-}
 
-preencherDias();
-adicionarLembretes();
+    createCalendar();
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+});

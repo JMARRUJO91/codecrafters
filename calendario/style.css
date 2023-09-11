@@ -10,7 +10,7 @@ body {
 }
 
 .calendar {
-    background-color: #fff;
+    background-color: rgba(157, 186, 220, 1);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
@@ -28,14 +28,16 @@ h1 {
 #countdown-timer {
     font-size: 24px;
     font-weight: bold;
-    color:  #00866e;
+    color: rgba(63, 118, 189, 1);
+    ;
     ;
 }
 
 .date-grid {
+    FONT-VARIANT: JIS83;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
+    gap: 5px;
 }
 
 .date-cell {
@@ -48,7 +50,8 @@ h1 {
 }
 
 .date-cell.current-day {
-    background-color: #00866e;
+    background-color: rgba(63, 118, 189, 1);
+    ;
     ;
     color: white;
 }
@@ -56,4 +59,3 @@ h1 {
 .date-cell.disabled {
     color: #ccc;
 }
-

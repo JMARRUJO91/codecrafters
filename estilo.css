@@ -20,21 +20,28 @@ body {
 }
 
 .img1 {
-    height: 450px;
+    height:  440px;
   
 }
 
 .img2 {
-    height: 450px;
+    height: 440px;
     width: auto;
   
 }
 
 
 .img3 {
-    height: 450px;
+    height:  440px;
    
 }
+
+
+.img4 {
+    height:  440px;
+   
+}
+
 
 
 button {
