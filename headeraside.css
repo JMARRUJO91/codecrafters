@@ -1,0 +1,99 @@
+body, p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.0rem;
+    /* tamanho da fonte */
+    font-style: italic;
+    /* estilo */
+    color: rgb(0, 0, 0);
+    /* cor do texto */
+    text-align: center;
+    /* alinhamento */
+}
+
+.principal {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 300px px 100px;
+    grid-template-areas:
+    "cabecalho cabecalho"
+
+    "secao barra-lateral"
+
+    "rodape rodape";
+}
+
+header {
+    grid-area: cabecalho;
+    background-color: rgb(255, 255, 255);
+
+ 
+}
+
+section {
+    grid-area: barra-lateral;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+    padding: 20px;
+   
+}
+
+aside {
+    grid-area: secao;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    margin: 20px;
+}
+
+footer {
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(63, 118, 189, 1);
+  
+
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(63, 118, 189, 1);
+    color: rgba(157, 186, 220, 1);
+    font-weight: bold;
+    font-size: 20pt;
+    width: 100vw;
+    height: 25vh;
+}
+
+
+
+#menu a {
+    text-decoration:none;
+    font-family: 'Gill Sans', 'Gill Sans HT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(157, 186, 220, 1);
+}
+
+#menu a:hover {
+    text-decoration:none;
+    color: rgb(75, 138, 221);
+}
+
+#menu li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+#menu img {
+    left: 0;
+    padding: 0 20px 0 20px;
+    height: 170px;
+    width: 170px;
+}
+h4 {
+    padding: 20px 40px 5px 40px;
+}
