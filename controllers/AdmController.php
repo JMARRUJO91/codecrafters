@@ -22,11 +22,11 @@ class AdmController {
         include 'views/adms/lista.php';
     }
 
-    public function atualizarAdm ($id_adm, $nome, $email, $senha) {
-        $this->admModel->atualizarAdm($id_adm, $nome, $email, $senha);
+    public function atualizarAdm ($id, $nome, $email, $senha) {
+        $this->admModel->atualizarAdm($id, $nome, $email, $senha);
     }
-    public function excluirAdm ($id_adm) {
-        $this->admModel->excluirAdm($id_adm);
+    public function excluirAdm ($id) {
+        $this->admModel->excluirAdm($id);
     }
 }
 
