@@ -18,9 +18,7 @@
                 <?php foreach ($adms as $adm): ?>
                     <tbody>
                         <tr>
-                            <td><?php echo $adms['id_adm']; ?></td>
-                            <td><?php echo $adms['nome']; ?></td>
-                            <td><?php echo $adms['email']; ?></td>
+                            <td><?php echo $adms['id']; ?></td>
                         </tr>
                 <?php endforeach; ?>
                 </tbody>

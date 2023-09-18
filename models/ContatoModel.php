@@ -6,10 +6,10 @@ public function __construct($pdo) {
     $this->pdo = $pdo;
     }
 
-public function criarContato($nome, $email, $idade, $telefone) {
-    $sql = "INSERT INTO contato (nome, email, idade, telefone) VALUES (?, ?)";
+public function criarContato($nome, $sugestao) {
+    $sql = "INSERT INTO contato (nome, sugestao) VALUES (?, ?)";
     $stmt = $this->pdo->prepare($sql);
-    $stmt->execute([$nome, $email, $idade, $telefone]);
+    $stmt->execute([$nome, $sugestao]);
     }
 
 public function listarContatos() {
@@ -20,10 +20,10 @@ public function listarContatos() {
 
     // Implementar métodos para atualizar e excluir contatos
 
-    public function atualizarContato($id_contato, $nome, $email, $idade, $telefone){
-        $sql = "UPDATE contato SET modalidade = ?, ano_olimpiada = ? WHERE id_contato = ?";
+    public function atualizarContato($id_contato, $nome, $sugestao){
+        $sql = "UPDATE contato SET nome = ?, sugestao = ? WHERE id_contato = ?";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$nome, $email, $idade, $telefone, $id_contato]);
+        $stmt->execute([$nome, $sugestao]);
     }
     
 
