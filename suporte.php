@@ -1,5 +1,27 @@
 <?php
-require_once 'db.php';
+
+
+
+
+    if(isset($_POST['submit']))
+    {
+         //print_r('Nome: ' . $_POST['sugestao']);
+        //print_r('<br>');
+        
+
+        include_once('./cadastro-e-login/config.php');
+
+        $nome = $_POST['nome'];
+        $sugestao = $_POST['sugestao'];
+        
+
+        $result = mysqli_query($conexao, "INSERT INTO contato(nome,sugestao)
+        VALUES ('$nome','$sugestao')");
+
+        header('Location: suporte.php');
+    }
+
+?>
 ?>
 
 
@@ -14,8 +36,6 @@ require_once 'db.php';
     <link rel="stylesheet" href="suporte.css">
     <link rel="stylesheet" href="calendariosuporte.css">
     <link rel="stylesheet" href="faq.css">
-
-
 </head>
 <body>
 
@@ -34,7 +54,7 @@ require_once 'db.php';
                         <li><a href="#">GALERIA</a></li>
                         <li><a href="#">EQUIPES</a></li>
                         <li><a href="#">RESULTADOS</a></li> 
-                        <li><a href="suporte.html">SUPORTE</a></li>
+                        <li><a href="suporte.php">SUPORTE</a></li>
                     </ul>
                     </div>
                     
@@ -141,12 +161,12 @@ require_once 'db.php';
         </script>
         
     
-<form action="suporte.html" method="POST">
+<form action="suporte.php" method="POST">
     <div class="formulariocontato">
-        <label class="contato1" for="contato">Alguma idéia/sugestão ou dúvida? </label>
-        <input class="contato2" placeholder="Fale conosco!" type="textarea" name="contato" id="contato">
         <label class="nome1" for="nome">Insira seu nome!</label>
         <input class="nome2" placeholder="Nome" type="textarea" name="nome" id="nome">
+        <label class="contato1" for="sugestao">Alguma idéia/sugestão ou dúvida? </label>
+        <input class="contato2" placeholder="Fale conosco!" type="textarea" name="sugestao" id="sugestao">
         <input class="" type="submit" name="submit" value="Enviar">
         </div>
     </form>
