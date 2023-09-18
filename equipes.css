@@ -1,0 +1,26 @@
+
+/* Defina a tabela arredondada */
+.table-container{
+    border-collapse: separate;
+    border-spacing: 10px;
+    border-radius: 10px;
+}
+
+/* Estilo para as células do cabeçalho */
+.table-container th {
+    padding: 10px;
+    background-color: rgb(195, 219, 250); /* Cor de fundo para o cabeçalho */
+    border-radius: 10px 10px 0 0; /* Cantos arredondados no topo */
+}
+
+/* Estilo para as células do corpo da tabela */
+.table-container td {
+    padding: 10px;
+    background-color: rgb(145, 183, 233); /* Cor de fundo para as células do corpo */
+}
+
+/* Estilizar a imagem para caber no espaço da célula */
+.table-container img {
+    max-width: 100%;
+    border-radius: 50%; /* Para tornar a imagem circular, ajuste conforme necessário */
+}
