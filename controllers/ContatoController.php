@@ -9,8 +9,8 @@ class ContatoController {
         $this->contatoModel = new ContatoModel($pdo);
     }
 
-    public function criarContato($nome, $email, $idade, $telefone) {
-        $this->contatoModel->criarContato($nome, $email, $idade, $telefone);
+    public function criarContato($nome, $sugestao) {
+        $this->contatoModel->criarContato($nome, $sugestao);
     }
 
     public function listarcontatos() {
@@ -22,8 +22,8 @@ class ContatoController {
         include 'views/contatos/lista.php';
     }
 
-    public function atualizarContato ($id_contato, $nome, $email, $idade, $telefone) {
-        $this->contatoModel->atualizarContato($id_contato, $nome, $email, $idade, $telefone);
+    public function atualizarContato ($id_contato, $nome, $sugestao) {
+        $this->contatoModel->atualizarContato($id_contato, $nome, $sugestao);
     }
     public function excluirContato ($id_contato) {
         $this->contatoModel->excluirContato($id_contato);
