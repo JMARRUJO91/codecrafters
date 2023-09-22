@@ -19,6 +19,7 @@
                     <tbody>
                         <tr>
                             <td><?php echo $adms['id']; ?></td>
+                            <td><?php echo $adms['nome']; ?></td>
                         </tr>
                 <?php endforeach; ?>
                 </tbody>

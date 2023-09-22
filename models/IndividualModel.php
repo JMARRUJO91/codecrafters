@@ -7,7 +7,7 @@ public function __construct($pdo) {
     }
 
 public function criarIndividual($nome, $idade, $modalidade, $email, $cidade, $serie, $telefone) {
-    $sql = "INSERT INTO individual (nome, idade, modalidade, email, cidade, serie, telefone) VALUES (?, ?)";
+    $sql = "INSERT INTO individual (nome, idade, modalidade, email, cidade, serie, telefone) VALUES (?, ?, ?, ?, ?, ?, ?)";
     $stmt = $this->pdo->prepare($sql);
     $stmt->execute([$nome, $idade, $modalidade, $email, $cidade, $serie, $telefone]);
     }
