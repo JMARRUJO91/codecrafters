@@ -8,13 +8,8 @@
         $nome = $_POST['nome'];
         $senha = $_POST['senha'];
 
-         //print_r('<br>');
-        //print_r('Nome: ' . $nome);
 
-         //print_r('<br>');
-         //print_r('Senha: ' . $senha);
-
-        $sql = "SELECT * FROM adm WHERE senha = '$senha', nome = '$nome'";
+        $sql = "SELECT * FROM adm WHERE nome = '$nome' and senha = '$senha'";
 
         $result = $conexao->query($sql);
 
