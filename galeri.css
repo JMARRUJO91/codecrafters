@@ -27,7 +27,6 @@ body > header h1 {
 
 main {
   margin: 10px auto;
-  max-width: 1280px;
   width: 100%;
   text-align: center;
   text-align-last: center;
@@ -54,8 +53,8 @@ main {
 }
 
 .gallery-element img {
-  width: 400px;
-  height: 250px;
+  width: 450px;
+  height: 300px;
 }
 
 .gallery-element figcaption {
