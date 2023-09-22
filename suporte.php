@@ -84,9 +84,7 @@
 
                   
         </aside>
-        <style>
-         
-        </style>
+        <section>
  <div class="faq">
         <p>FAQ (PERGUNTAS MAIS REALIZADAS)</p>
             <div class="accordion">
@@ -170,6 +168,7 @@
         <input class="" type="submit" name="submit" value="Enviar">
         </div>
     </form>
+        </section>
     <footer>
         <br>
         <br>
