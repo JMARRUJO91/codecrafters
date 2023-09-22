@@ -7,7 +7,7 @@ public function __construct($pdo) {
     }
 
 public function criarColetivo($nomes, $equipe, $modalidade, $serie) {
-    $sql = "INSERT INTO coletivo (nomes, equipe, modalidade, serie) VALUES (?, ?)";
+    $sql = "INSERT INTO coletivo (nomes, equipe, modalidade, serie) VALUES (?, ?, ?, ?)";
     $stmt = $this->pdo->prepare($sql);
     $stmt->execute([$nomes, $equipe, $modalidade, $serie]);
     }

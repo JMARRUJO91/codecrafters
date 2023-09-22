@@ -55,7 +55,7 @@ if(isset($_POST['submit']))
     
 </head>
 <body>
-    <a href="">Voltar</a>
+    <a href="login_adm.php">Voltar</a>
     <div>
         <form action="formulario.php" method="POST">
             <fieldset>
@@ -83,7 +83,7 @@ if(isset($_POST['submit']))
                 <br></br>
                 <section>
     <button type="submit" name="submit" value="Agendar">Enviar</button>
-    <button type="submit" name="submit" value=""><a href="lista.php">Lista</a></button>
+    <button type="submit" name="submit" value=""><a href="listar.php">Outras Equipes</a></button>
                 </section>
             </fieldset>
         </form>
@@ -130,7 +130,7 @@ if(isset($_POST['submit']))
                 <br></br>
                 <section>
     <input class="" type="submit" name="submit" value="Enviar">
-    <button type="submit" name="submit" value=""><a href="lista.php">Lista</a></button>
+    <button type="submit" name="submit" value=""><a href="lista.php">Competidores</a></button>
 </section>
             </fieldset>
         </form>
