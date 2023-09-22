@@ -26,42 +26,9 @@
                         <li><a href="suporte.php">SUPORTE</a></li>
                     </ul>
                     </div>
+                    </section>
+
                     
-
-       
-
-        <section>
-            <div class="carousel">
-                <div class="slide">
-                    <img class="img1" src="imagens/inter.jpeg" alt="Imagem 1">
-                </div>
-                <div class="slide">
-                    <img class="img2" src="imagens/fut.jpeg" alt="Imagem 2">
-                </div>
-                <div class="slide">
-                    <img class="img3" src="imagens/queimada.png" alt="Imagem 3">
-                </div>
-                <div class="slide">
-                    <img class="img4" src="imagens/volei.png" alt="Imagem 4">
-                </div>
-                <div class="slide">
-                    <img class="img5" src="imagens/marian.png" alt="Imagem 5">
-                </div>
-                <div class="slide">
-                    <img class="img6" src="imagens/campo.png" alt="Imagem 6">
-                </div>
-                <div class="slide">
-                    <img class="img7" src="imagens/ima.png" alt="Imagem 7">
-                </div>
-                <button class="prev-button">❮</button>
-                <button class="next-button">❯</button>
-            </div>
-            <script src="banner.js"></script>
-            <br>
-            <br>
-            <br>
-
-        </section>
         <aside>
             
                 <div class="calendar">
@@ -74,6 +41,8 @@
                             <span id="minutes"></span> minutos
                             <span id="seconds"></span> segundos
                         </div>
+
+
                     </div>
                     <div class="date-grid" id="calendar"></div>
                 </div>
@@ -87,9 +56,23 @@
     </footer>
     </div>
 
-  
+    <div>
+        <h1>Login</h1>
+        <form action="testLogin.php" method="POST">
+            <div>
+            <input type="text" name="nome" id="nome" placeholder="Usuário">
+           </div>
+           <br>
+            <input type="password" name="senha" placeholder="Senha">
+            <br><br>
+            <a href="index.html" class="submit">Login</a>
+        
+    </div>
+    <h1>Adm</h1>
+    <div class="box">
+        <a href="./cadastro-e-login/login_adm.php">Login Adm</a>
+        <a href="./cadastro-e-login/cadastro.php">Cadastro Adm</a>
+    </div>
 
 </body>
 </html>
-
-
