@@ -6,10 +6,10 @@ public function __construct($pdo) {
     $this->pdo = $pdo;
     }
 
-public function criarAdm($nome, $email, $senha) {
-    $sql = "INSERT INTO adm (nome, email, senha) VALUES (?, ?)";
+public function criarAdm($senha) {
+    $sql = "INSERT INTO adm (senha) VALUES (?)";
     $stmt = $this->pdo->prepare($sql);
-    $stmt->execute([$nome, $email, $senha]);
+    $stmt->execute([$senha]);
     }
 
 public function listaradms() {
@@ -20,17 +20,17 @@ public function listaradms() {
 
     // Implementar métodos para atualizar e excluir ADM
 
-    public function atualizarAdm($id_adm, $nome, $email, $senha){
-        $sql = "UPDATE coletivo SET nome = ?, email = ?, senha = ? WHERE id_adm = ?";
+    public function atualizarAdm($id, $senha){
+        $sql = "UPDATE coletivo SET nome = ?, email = ?, senha = ? WHERE id= ?";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$nome, $email, $senha, $id_adm]);
+        $stmt->execute([$senha, $id]);
     }
     
 
-    public function excluirAdm($id_coletivo) {
-        $sql = "DELETE FROM adm WHERE id_adm = ?";
+    public function excluirAdm($id) {
+        $sql = "DELETE FROM adm WHERE id = ?";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$id_adm]);
+        $stmt->execute([$id]);
     }
 }
 ?>

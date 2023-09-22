@@ -12,9 +12,7 @@
                     <tr>
                         <th>ID</th>
                         <th>Nome</th>
-                        <th>Email</th>
-                        <th>Idade</th>
-                        <th>Telefone</th>
+                        <th>Sugestão</th>
                     </tr>
                 </thead>
                 <?php foreach ($contatos as $contato): ?>
@@ -22,9 +20,7 @@
                         <tr>
                             <td><?php echo $contatos['id_contato']; ?></td>
                             <td><?php echo $contatos['nome']; ?></td>
-                            <td><?php echo $contatos['email']; ?></td>
-                            <td><?php echo $contatos['idade']; ?></td>
-                            <td><?php echo $contatos['telefone']; ?></td>
+                            <td><?php echo $contatos['sugestao']; ?></td>
                         </tr>
                 <?php endforeach; ?>
                 </tbody>

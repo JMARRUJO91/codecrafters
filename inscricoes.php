@@ -10,20 +10,25 @@
 <body>
 
     <div class="principal">
-    <div id="menu">
+        
+            
+
+                <div id="menu">
                     
                     <img src="imagens/logo1.png" width="400" height="450" >
                     <ul>
                         <li><a href="index.html">INÍCIO</a></li>
-                        <li><a href="#">INSCRIÇÕES</a></li>
-                        <li><a href="#">SOBRE</a></li>
-                        <li><a href="#">GALERIA</a></li>
-                        <li><a href="#">EQUIPES</a></li>
-                        <li><a href="#">RESULTADOS</a></li> 
-                        <li><a href="suporte.html">SUPORTE</a></li>
+                        <li><a href="inscricoes.php">INSCRIÇÕES</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
+                        <li><a href="galeria.html">GALERIA</a></li>
+                        <li><a href="equipes.html">EQUIPES</a></li>
+                        <li><a href="resultados.html">RESULTADOS</a></li>
+                        <li><a href="suporte.php">SUPORTE</a></li>
                     </ul>
                     </div>
+                    </section>
 
+                    
         <aside>
             
                 <div class="calendar">
@@ -36,6 +41,8 @@
                             <span id="minutes"></span> minutos
                             <span id="seconds"></span> segundos
                         </div>
+
+
                     </div>
                     <div class="date-grid" id="calendar"></div>
                 </div>
@@ -43,36 +50,29 @@
 
         
         </aside>
-
-        
-        <section>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-           
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            
-
-        </section>
         <footer>
     <br>
     <br>
     </footer>
     </div>
 
-  
+    <div>
+        <h1>Login</h1>
+        <form action="testLogin.php" method="POST">
+            <div>
+            <input type="text" name="nome" id="nome" placeholder="Usuário">
+           </div>
+           <br>
+            <input type="password" name="senha" placeholder="Senha">
+            <br><br>
+            <a href="index.html" class="submit">Login</a>
+        
+    </div>
+    <h1>Adm</h1>
+    <div class="box">
+        <a href="./cadastro-e-login/login_adm.php">Login Adm</a>
+        <a href="./cadastro-e-login/cadastro.php">Cadastro Adm</a>
+    </div>
 
 </body>
 </html>

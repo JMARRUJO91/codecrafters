@@ -1,0 +1,12 @@
+
+.formulariocontato{
+margin-top: 680px;
+margin-left: -1100px;
+}
+
+footer {
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(63, 118, 189, 1);
+}
