@@ -87,10 +87,47 @@ body > footer:hover {
   transition: 1s;
 }
 
+#menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgba(63, 118, 189, 1);
+  color: rgba(157, 186, 220, 1);
+  font-weight: bold;
+  font-size: 20pt;
+  width: 100vw;
+  height: 25vh;
+}
+
+
+
+#menu a {
+  text-decoration:none;
+  font-family: 'Gill Sans', 'Gill Sans HT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgba(157, 186, 220, 1);
+}
+
+#menu a:hover {
+  text-decoration:none;
+  color: rgb(75, 138, 221);
+}
+
+#menu li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+#menu img {
+  left: 0;
+  height: 170px;
+  width: 170px;
+}
+
 
 @media screen and (max-width: 360px) {
   .gallery-element:hover img{ 
-      transform: scale: (1);
+      transform: scale(1.05);
   
   }
 }
