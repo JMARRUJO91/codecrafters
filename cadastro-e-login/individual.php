@@ -34,7 +34,7 @@ if(isset($_POST['submit']))
     
 </head>
 <body>
-    <a href="login_adm.php">Voltar</a>
+    <a href="confirma.php">Voltar</a>
     <div>
         <form action="individual.php" method="POST">
             <fieldset>

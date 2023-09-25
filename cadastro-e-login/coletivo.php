@@ -32,7 +32,7 @@
     
 </head>
 <body>
-    <a href="login_adm.php">Voltar</a>
+    <a href="confirma.php">Voltar</a>
     <div>
         <form action="coletivo.php" method="POST">
             <fieldset>
