@@ -22,7 +22,7 @@
     }
 
 ?>
-?>
+
 
 
 <!DOCTYPE html>
@@ -55,15 +55,11 @@
                         <li><a href="equipes.html">EQUIPES</a></li>
                         <li><a href="resultados.html">RESULTADOS</a></li> 
                         <li><a href="suporte.php">SUPORTE</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
                     </ul>
                     </div>
                     
 
-
-
-
-
-                   
         <aside>
             
                 <div class="calendar">
@@ -84,7 +80,11 @@
 
                   
         </aside>
+
+
         <section>
+       
+
  <div class="faq">
         <p>FAQ (PERGUNTAS MAIS REALIZADAS)</p>
             <div class="accordion">
@@ -142,8 +142,14 @@
                 </div>
             </div>
         </div>
+
+        <div>
+            
+        </div>
+
     </div>
-      
+
+     
         <script>
             let answers=document.querySelectorAll(".accordion");
             answers.forEach((event)=>{
@@ -156,23 +162,18 @@
                     }
                 })
             })
-        </script>
+         </script>
         
-    
-<form action="suporte.php" method="POST">
-    <div class="formulariocontato">
-        <label class="nome1" for="nome">Insira seu nome!</label>
-        <input class="nome2" placeholder="Nome" type="textarea" name="nome" id="nome">
-        <label class="contato1" for="sugestao">Alguma idéia/sugestão ou dúvida? </label>
-        <input class="contato2" placeholder="Fale conosco!" type="textarea" name="sugestao" id="sugestao">
-        <input class="" type="submit" name="submit" value="Enviar">
-        </div>
-    </form>
-        </section>
+ 
+
+  
+  </section>
+      
     <footer>
         <br>
         <br>
-        </footer>
+    </footer>
+
     </div>
 </body>
 </html>
