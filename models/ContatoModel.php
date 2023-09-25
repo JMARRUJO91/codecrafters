@@ -23,7 +23,7 @@ public function listarContatos() {
     public function atualizarContato($id_contato, $nome, $sugestao){
         $sql = "UPDATE contato SET nome = ?, sugestao = ? WHERE id_contato = ?";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$nome, $sugestao]);
+        $stmt->execute([$nome, $sugestao, $id_contato]);
     }
     
 

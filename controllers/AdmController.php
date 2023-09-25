@@ -9,8 +9,8 @@ class AdmController {
         $this->admModel = new AdmModel($pdo);
     }
 
-    public function criarAdm($senha) {
-        $this->admModel->criarAdm($senha);
+    public function criarAdm($nome, $senha) {
+        $this->admModel->criarAdm($nome, $senha);
     }
 
     public function listarAdms() {
@@ -22,8 +22,8 @@ class AdmController {
         include 'views/adms/lista.php';
     }
 
-    public function atualizarAdm ($id, $senha) {
-        $this->admModel->atualizarAdm($id, $senha);
+    public function atualizarAdm ($id, $nome, $senha) {
+        $this->admModel->atualizarAdm($id, $nome, $senha);
     }
     public function excluirAdm ($id) {
         $this->admModel->excluirAdm($id);

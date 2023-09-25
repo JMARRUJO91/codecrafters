@@ -22,7 +22,7 @@ class IndividualController {
         include 'views/individuais/lista.php';
     }
 
-    public function atualizarIndividual ($id_treinador, $nome, $idade, $modalidade, $email, $cidade, $serie, $telefone) {
+    public function atualizarIndividual ($id_individual, $nome, $idade, $modalidade, $email, $cidade, $serie, $telefone) {
         $this->individualModel->atualizarIndividual($id_individual, $nome, $idade, $modalidade, $email, $cidade, $serie, $telefone);
     }
     public function excluirIndividual ($id_individual) {

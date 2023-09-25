@@ -10,9 +10,9 @@
     
     <div>
         <h1>Login</h1>
-        <form action="testLogin.php" method="POST">
+        <form action="" method="POST">
             <div>
-            <input type="text" name="nome" id="nome" placeholder="Usuário">
+            <input type="text" name="nome" placeholder="Usuário">
            </div>
            <br>
             <input type="password" name="senha" placeholder="Senha">

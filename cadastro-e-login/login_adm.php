@@ -7,7 +7,7 @@
     <title>Tela de login</title>
 </head>
 <body>
-    <a href="">Voltar</a>
+    <a href="../inscricoes.php">Voltar</a>
     <div>
         <h1>Login</h1>
         <form action="testLogin.php" method="POST">
@@ -15,7 +15,7 @@
             <br><br>
             <input type="password" name="senha" placeholder="Senha">
             <br><br>
-            <input class="inputSubmit" type="submit" name="submit" value="Entrar">
+            <input class="" type="submit" name="submit" value="Entrar">
         </form>
     </div>
 </body>

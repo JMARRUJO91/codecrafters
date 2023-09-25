@@ -35,12 +35,12 @@
             <fieldset>
                 <legend><b>Cadastro de Administrador</b></legend>
                 <br>
-                <div class="inputBox">
+                <div class="">
                     <input type="text" name="nome" id="nome" required>
                     <label for="nome" >Nome</label>
                 </div>
                 <br>
-                <div class="inputBox">
+                <div class="">
                     <input type="password" name="senha" id="senha" required>
                     <label for="senha" >Senha</label>
                 </div>
