@@ -14,7 +14,7 @@
 </head>
 <body>
 <a href="login_adm.php">Voltar</a>
-    <h1>Parabéns<?php?> foi logado com sucesso!</h1>
+    <h1>Parabéns você foi logado com sucesso!</h1>
     <h2>escolha seu método de inscrição</h2>
     <div class="">
         <a href="coletivo.php">Equipes | Coletivo</a>
