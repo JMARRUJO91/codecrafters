@@ -26,7 +26,7 @@
         {
             $_SESSION['nome'] = $nome;
             $_SESSION['senha'] = $senha;
-            header('Location: formulario.php');
+            header('Location: confirma.php');
         }
     }
     else
