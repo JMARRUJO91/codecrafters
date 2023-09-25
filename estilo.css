@@ -20,45 +20,42 @@ body {
 }
 
 .img1 {
-    height:  440px;
-  
+    height:  450px;
 }
 
 .img2 {
-    height: 440px;
-    width: auto;
-  
+    height: 450px;
 }
 
 
 .img3 {
-    height:  440px;
-   
+    height:  450px;
 }
 
 
 .img4 {
-    height:  440px;
-   
+    height:  450px;
 }
 
 
 .img5 {
-    height:  490px;
-   
+    height:  450px;
 }
 
 
 .img6 {
-    height:  490px;
-   
+    height:  450px;
 }
 
 
 .img7 {
-    height:  490px;
-   
+    height:  450px;
 }
+
+.img8 {
+    height:  450px;
+}
+
 
 
 
@@ -81,3 +78,22 @@ button {
 .next-button {
     right: 10px;
 }
+
+body > footer {
+    border-top: 1px solid #000;
+    opacity: 0.4;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  body > footer a {
+    text-decoration: none;
+  }
+  
+  /* Transisoes e animacoes */
+  
+  body > footer:hover {
+    color: #000000;
+    opacity: 1;
+  } 
