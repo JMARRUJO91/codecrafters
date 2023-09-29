@@ -1,28 +1,19 @@
 <?php
-//INDIVIDUAL
-if(isset($_POST['submit']))
-{
-     print_r('Nome: ' . $_POST['nome']);
-     print_r('<br>');
-     print_r('Modalidade: ' . $_POST['modalidade']);
-     print_r('<br>');
-    
-     include_once('config.php');
 
-    $nome = $_POST['nome'];
-    $idade = $_POST['idade'];
-    $modalidade = $_POST['modalidade'];
-    $email = $_POST['email'];
-    $cidade = $_POST['cidade'];
-    $serie = $_POST['serie'];
-    $telefone = $_POST['telefone'];
-    
+    if(isset($_POST['submit']))
+    {
+        include_once('config.php');
 
-    $result = mysqli_query($conexao, "INSERT INTO individual(nome,idade,modalidade,email,cidade,serie,telefone) 
-    VALUES ('$nome','$idade','$modalidade','$email','$cidade','$serie','$telefone')");
+        $nomes = $_POST['nomes'];
+        $equipe = $_POST['equipe'];
+        $modalidade = $_POST['modalidade'];
+        $serie = $_POST['serie'];
+        $result = mysqli_query($conexao, "INSERT INTO coletivo(nomes,equipe,modalidade,serie) 
+        VALUES ('$nomes','$equipe','$modalidade','$serie')");
 
-    header('Location: individual.php');
-}
+        header('Location: login.php');
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,12 +21,8 @@ if(isset($_POST['submit']))
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário | GREENCODE</title>
-    
-</head>
-<body>
-
-<style>
+    <title>Formulário | GN</title>
+    <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
@@ -51,6 +38,11 @@ if(isset($_POST['submit']))
             border-radius: 15px;
             width: 20%;
         }
+
+        .botaolistar{
+         
+        }
+
         fieldset{
             border: 3px solid dodgerblue;
         }
@@ -107,55 +99,55 @@ if(isset($_POST['submit']))
         #submit:hover{
             background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
         }
-        </style>
 
+        .botaolistar{
+            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+            width: 100%;
+            height: 800px
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
 
-    
+        .botaolistar:hover{
+            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+        }
+    </style>
+</head>
+<body>
+    <a href="../inscricoes.php">Voltar</a>
     <div class="box">
-        <form action="individual.php" method="POST">
+        <form action="formulario.php" method="POST">
             <fieldset>
-                <legend><b>Inscrição Individual</b></legend>
+                <legend><b>Adicionar equipe</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome completo</label>
+                    <input type="text" name="nomes" id="nomes" class="inputUser">
+                    <label for="nome" class="labelInput">Nome dos participantes:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="idade" id="idade" class="inputUser" required>
-                    <label for="idade" class="labelInput">Idade</label>
+                    <input type="text" name="equipe" id="equipe" class="inputUser" >
+                    <label for="senha" class="labelInput">Nome da equipe:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="modalidade" id="modalidade" class="inputUser" required>
-                    <label for="modalidade" class="labelInput">Modalidade</label>
+                    <input type="text" name="modalidade" id="modalidade" class="inputUser" value=>
+                    <label for="email" class="labelInput">Modalidade:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser" required>
-                    <label for="email" class="labelInput">Email</label>
+                    <input type="text" name="serie" id="serie" class="inputUser">
+                    <label for="email" class="labelInput">Série:</label>
                 </div>
-                <br></br>
-                <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                    <label for="cidade" class="labelInput">Cidade</label>
-                </div>
-                <br></br>
-                <div class="inputBox">
-                    <input type="text" name="serie" id="serie" class="inputUser" required>
-                    <label for="serie" class="labelInput">Série</label>
-                </div>
-                <br></br>
-                <div class="inputBox">
-                    <input type="text" name="telefone" id="telefone" class="inputUser" required>
-                    <label for="telefone" class="labelInput">Telefone</label>
-                </div>
-                <br></br>
-<section>
-    <input class="inputBox" type="submit" name="submit" value="Enviar">
-    <button type="submit" name="submit" value=""><a href="indi_lista.php">Competidores</a></button>
-    <button type="submit" name="submit" value=""><a href="confirma.php">Voltar</a></button>
-</section>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+                <input class="botaolistar" type="button" name="botaolistar" id="botaolstar" value="Listar">
+                
             </fieldset>
         </form>
     </div>

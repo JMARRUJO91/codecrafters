@@ -1,28 +1,26 @@
 <?php
-//INDIVIDUAL
-if(isset($_POST['submit']))
-{
-     print_r('Nome: ' . $_POST['nome']);
-     print_r('<br>');
-     print_r('Modalidade: ' . $_POST['modalidade']);
-     print_r('<br>');
-    
-     include_once('config.php');
+    include_once('config.php');
 
-    $nome = $_POST['nome'];
-    $idade = $_POST['idade'];
-    $modalidade = $_POST['modalidade'];
-    $email = $_POST['email'];
-    $cidade = $_POST['cidade'];
-    $serie = $_POST['serie'];
-    $telefone = $_POST['telefone'];
-    
-
-    $result = mysqli_query($conexao, "INSERT INTO individual(nome,idade,modalidade,email,cidade,serie,telefone) 
-    VALUES ('$nome','$idade','$modalidade','$email','$cidade','$serie','$telefone')");
-
-    header('Location: individual.php');
-}
+    if(!empty($_GET['id_individual']))
+    {
+        $id = $_GET['id_individual'];
+        $sqlSelect = "SELECT * FROM individual WHERE id_individual=$id_individual";
+        $result = $conexao->query($sqlSelect);
+        if($result->num_rows > 0)
+        {
+            while($user_data = mysqli_fetch_assoc($result))
+            {
+                $nome = $user_data['nome'];
+                $senha = $user_data['idade'];
+                $email = $user_data['modalidade'];
+                $email = $user_data['email'];
+                $cidade = $user_data['cidade'];
+                $serie = $user_data['serie'];
+                $telefone = $user_data['telefone'];
+                
+            }
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,10 +29,8 @@ if(isset($_POST['submit']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário | GREENCODE</title>
-    
 </head>
 <body>
-
 <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -107,54 +103,51 @@ if(isset($_POST['submit']))
         #submit:hover{
             background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
         }
-        </style>
-
-
-    
-    <div class="box">
+    </style>
+    <a href="indi_lista.php">Voltar</a>
+    <div>
         <form action="individual.php" method="POST">
             <fieldset>
-                <legend><b>Inscrição Individual</b></legend>
+                <legend><b>Atualizar a Inscrição Individual</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <input type="text" name="nome" id="nome" class="inputUser" value="" required>
                     <label for="nome" class="labelInput">Nome completo</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="idade" id="idade" class="inputUser" required>
-                    <label for="idade" class="labelInput">Idade</label>
+                    <label for="idade" class="">Idade</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="modalidade" id="modalidade" class="inputUser" required>
-                    <label for="modalidade" class="labelInput">Modalidade</label>
+                    <label for="modalidade" class="">Modalidade</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="email" id="email" class="inputUser" required>
-                    <label for="email" class="labelInput">Email</label>
+                    <label for="email" class="">Email</label>
                 </div>
                 <br></br>
                 <div class="inputBox">
                     <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                    <label for="cidade" class="labelInput">Cidade</label>
+                    <label for="cidade" class="">Cidade</label>
                 </div>
                 <br></br>
                 <div class="inputBox">
                     <input type="text" name="serie" id="serie" class="inputUser" required>
-                    <label for="serie" class="labelInput">Série</label>
+                    <label for="serie" class="">Série</label>
                 </div>
                 <br></br>
                 <div class="inputBox">
                     <input type="text" name="telefone" id="telefone" class="inputUser" required>
-                    <label for="telefone" class="labelInput">Telefone</label>
+                    <label for="telefone" class="">Telefone</label>
                 </div>
                 <br></br>
 <section>
-    <input class="inputBox" type="submit" name="submit" value="Enviar">
+    <input class="" type="submit" name="submit" value="Enviar">
     <button type="submit" name="submit" value=""><a href="indi_lista.php">Competidores</a></button>
-    <button type="submit" name="submit" value=""><a href="confirma.php">Voltar</a></button>
 </section>
             </fieldset>
         </form>

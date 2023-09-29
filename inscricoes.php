@@ -26,7 +26,6 @@
                         <li><a href="suporte.php">SUPORTE</a></li>
                     </ul>
                     </div>
-                    </section>
 
                     
         <aside>
@@ -49,14 +48,9 @@
                 <script src="calendario/script.js"></script>
 
         
-        </aside>
-        <footer>
-    <br>
-    <br>
-    </footer>
-    </div>
-
-    <div>
+        </aside> 
+        <section>
+         <div>
         <h1>Login</h1>
         <form action="testLogin.php" method="POST">
             <div>
@@ -66,13 +60,24 @@
             <input type="password" name="senha" placeholder="Senha">
             <br><br>
             <a href="index.html" class="submit">Login</a>
+
+            
         
     </div>
     <h1>Adm</h1>
     <div class="box">
-        <a href="./cadastro-e-login/login_adm.php">Login Adm</a>
-        <a href="./cadastro-e-login/cadastro.php">Cadastro Adm</a>
+        <a href="cadastro-e-login/login.php">Login adm</a>
+        <a href="cadastro-e-login/cadastro.php">Cadastro Adm</a>
     </div>
+
+</section>
+        <footer>
+    <br>
+    <br>
+    </footer>
+    </div>
+
+  
 
 </body>
 </html>
