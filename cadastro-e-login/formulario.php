@@ -103,14 +103,14 @@
         .botaolistar{
             background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
             width: 100%;
-            height: 800px
+            height: 200px
             border: none;
+            text-decoration: none;
             padding: 15px;
             color: white;
             font-size: 15px;
             cursor: pointer;
             border-radius: 10px;
-            margin-bottom: 10px;
         }
 
         .botaolistar:hover{
@@ -146,7 +146,7 @@
                 </div>
                 <br><br>
                 <input type="submit" name="submit" id="submit">
-                <input class="botaolistar" type="button" name="botaolistar" id="botaolstar" value="Listar">
+                <a class="botaolistar" href="sistema.php">Listar</a>
                 
             </fieldset>
         </form>
