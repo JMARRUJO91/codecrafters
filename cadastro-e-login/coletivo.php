@@ -14,35 +14,9 @@
         $equipe = $_POST['equipe'];
         $modalidade = $_POST['modalidade'];
         $serie = $_POST['serie'];
-        $stmt = $pdo->prepare('SELECT COUNT(*) 
-
-FROM coletivo WHERE equipe = ?');
-$stmt->execute([$email, $telefone]);
-$count = $stmt->fetchColumn();
-
-if($count > 0) {
-    $error ='Já existe uma equipe com este nome.';
-}else{
-    $stmt = $pdo->prepare('INSERT INTO coletivo
-    (nomes, equipe, modalidade, serie)
-    VALUES(:nomes, :equipe, :modalidade, :serie)');
-    $stmt->execute(['nomes' => $nomes, 'equipe' => $equipe,
-    'modalidade' => $modalidade, 'serie'=> $serie]);
-
-    if($stmt->rowCount()){
-        echo'<span>Equipe criada com sucesso!</span>';
-    }else{
-        echo '<span>Erro ao criar equipe. Tente novamente mais tarde</span>';
-    }
-    
-    }
-    if(isset($error)){
-        echo '<span>' . $error . '</span>';
-    }
-        }
         
 
-        $result = mysqli_query($conexao, "INSERT INTO coletivo(nomes,equipe,modalidade,serie) 
+         $result = mysqli_query($conexao, "INSERT INTO coletivo(nomes,equipe,modalidade,serie) 
         VALUES ('$nomes','$equipe','$modalidade','$serie')");
 
         header('Location: coletivo.php');
