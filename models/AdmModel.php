@@ -21,7 +21,7 @@ public function listaradms() {
     // Implementar métodos para atualizar e excluir ADM
 
     public function atualizarAdm($id, $nome, $senha){
-        $sql = "UPDATE coletivo SET nome = ?, email = ?, senha = ? WHERE id= ?";
+        $sql = "UPDATE adm SET nome = ?, senha = ? WHERE id= ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$nome, $senha, $id]);
     }

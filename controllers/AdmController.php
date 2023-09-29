@@ -18,7 +18,7 @@ class AdmController {
     }
 
     public function exibirListaAdms() {
-        $admes = $this->admModel->listarAdms();
+        $adms = $this->admModel->listarAdms();
         include 'views/adms/lista.php';
     }
 

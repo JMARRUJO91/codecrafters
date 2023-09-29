@@ -20,5 +20,10 @@
         <a href="coletivo.php">Equipes | Coletivo</a>
         <a href="individual.php">Individual | Sozinho</a>
     </div>
+    <div class="a">
+        <a href="../listaradmin.php">Painel de admininstradores</a>
+    </div>
+
+
 </body>
 </html>
