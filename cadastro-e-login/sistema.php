@@ -36,13 +36,13 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">SISTEMA DA GREENCODE</a>
+            <a class="navbar-brand" href="#">SISTEMA | COLETIVO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
         <div class="d-flex">
-            <a href="sair.php" class="btn btn-danger me-5">Sair</a>
+        <a class="botaolistar" href="confirma.php">Voltar</a></button>
         </div>
     </nav>
     <br>

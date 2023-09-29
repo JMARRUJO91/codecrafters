@@ -39,10 +39,6 @@
             width: 20%;
         }
 
-        .botaolistar{
-         
-        }
-
         fieldset{
             border: 3px solid dodgerblue;
         }
@@ -89,7 +85,9 @@
         #submit{
             background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
             width: 100%;
+            height: 200px
             border: none;
+            text-decoration: none;
             padding: 15px;
             color: white;
             font-size: 15px;
@@ -101,20 +99,18 @@
         }
 
         .botaolistar{
-            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
-            width: 100%;
-            height: 800px
+            background-color: dodgerblue;
             border: none;
             padding: 15px;
+            width: 100%;
+            border-radius: 10px;
             color: white;
             font-size: 15px;
-            cursor: pointer;
-            border-radius: 10px;
-            margin-bottom: 10px;
         }
 
         .botaolistar:hover{
-            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+            background-color: deepskyblue;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -145,8 +141,9 @@
                     <label for="email" class="labelInput">Série:</label>
                 </div>
                 <br><br>
-                <input type="submit" name="submit" id="submit">
-                <input class="botaolistar" type="button" name="botaolistar" id="botaolstar" value="Listar">
+                <input class="botaolistar" type="submit" name="submit" value="Enviar">
+    <a class="botaolistar" href="sistema.php">Equipes</a></button>
+    <a class="botaolistar" href="confirma.php">Voltar</a></button>
                 
             </fieldset>
         </form>
