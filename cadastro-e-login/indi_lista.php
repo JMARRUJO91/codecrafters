@@ -112,7 +112,7 @@
 
     function searchData()
     {
-        window.location = 'sistema.php?search='+search.value;
+        window.location = 'indi_lista.php?search='+search.value;
     }
 </script>
 </html>

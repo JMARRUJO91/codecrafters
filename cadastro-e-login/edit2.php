@@ -19,8 +19,17 @@
                 $telefone = $user_data['telefone'];
                 
             }
+         }
+        else
+        {
+            header('Location: indi_lista.php');
         }
     }
+    else
+    {
+        header('Location: indi_lista.php');
+    }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -106,7 +115,7 @@
     </style>
 
     <div class="box">
-        <form action="individual.php" method="POST">
+        <form action="saveEdit.php" method="POST">
             <fieldset>
                 <legend><b>Atualizar a Inscrição Individual</b></legend>
                 <br>
