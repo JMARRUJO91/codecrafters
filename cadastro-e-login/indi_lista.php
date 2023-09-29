@@ -29,6 +29,23 @@
             justify-content: center;
             gap: .1%;
         }
+
+        .botaolistar{
+            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+            width: 100%;
+            height: 200px
+            border: none;
+            text-decoration: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .botaolistar:hover{
+            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+        }
     </style>
 </head>
 <body>
@@ -40,7 +57,7 @@
             </button>
         </div>
         <div class="d-flex">
-            <a href="sair.php" class="btn btn-danger me-5">Sair</a>
+        <a class="botaolistar" href="individual.php">Voltar</a></button>
         </div>
     </nav>
     <br>
