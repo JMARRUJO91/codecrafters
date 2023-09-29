@@ -60,7 +60,7 @@
                 <br></br>
                 <section>
     <button type="submit" name="submit" value="Agendar">Enviar</button>
-    <button type="submit" name="submit" value=""><a href="listar.php">Outras Equipes</a></button>
+    <button type="submit" name="submit" value=""><a href="../listar.php">Outras Equipes</a></button>
                 </section>
             </fieldset>
         </form>
