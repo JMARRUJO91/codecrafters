@@ -53,6 +53,7 @@
             <input class="inputSubmit" type="submit" name="submit" value="Enviar">
         </form>
         <button type="submit" name="submit" value=""><a href="../inscricoes.php">Voltar</a></button>
+        
     </div>
 </body>
 </html>
