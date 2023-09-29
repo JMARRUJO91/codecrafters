@@ -153,8 +153,8 @@ if(isset($_POST['submit']))
                 <br></br>
 <section>
     <input class="inputBox" type="submit" name="submit" value="Enviar">
-    <button type="submit" name="submit" value=""><a href="indi_lista.php">Competidores</a></button>
-    <button type="submit" name="submit" value=""><a href="confirma.php">Voltar</a></button>
+    <a class="botaolistar" href="indi_lista.php">Competidores</a></button>
+    <a class="botaolistar" href="confirma.php">Voltar</a></button>
 </section>
             </fieldset>
         </form>
