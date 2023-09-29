@@ -40,6 +40,11 @@
             background-color: deepskyblue;
             cursor: pointer;
         }
+
+        a .inputSubmit{
+        width: 50px;
+        }
+
     </style>
 </head>
 <body>
@@ -52,7 +57,8 @@
             <br><br>
             <input class="inputSubmit" type="submit" name="submit" value="Enviar">
         </form>
-        <button type="submit" name="submit" value=""><a href="../inscricoes.php">Voltar</a></button>
+        <a class="inputSubmit" href="../inscricoes.php">Voltar</a></button>
+        
     </div>
 </body>
 </html>

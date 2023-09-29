@@ -21,10 +21,7 @@
             header('Location: sistema.php');
         }
     }
-    else
-    {
-        header('Location: sistema.php');
-    }
+   
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -116,7 +113,7 @@
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nomes" id="nomes" class="inputUser" value=<?php echo $nomes;?> required>
-                    <label for="nome" class="labelInput">Nome dos participantes:</label>
+                    <label for="nomes" class="labelInput">Nome dos participantes:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
