@@ -18,7 +18,6 @@
 
         header('Location: cadastro.php');
     }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +28,7 @@
     <title>Cadastro | GREENCODE</title>
 </head>
 <body>
-    <a href="">Voltar</a>
+    <a href="../inscricoes.php">Voltar</a>
     <div class="box">
         <form action="cadastro.php" method="POST">
             <fieldset>
@@ -49,6 +48,7 @@
             </fieldset>
         </form>
     </div>
+
 </body>
 </html>
 

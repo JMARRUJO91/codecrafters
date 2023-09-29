@@ -1,3 +1,13 @@
+<?php
+    session_start();
+    include_once 'cadastro-e-login/config.php';
+    
+    $sql = "SELECT * FROM coletivo ORDER BY id DESC";
+    
+    $result = $conexao->query($sql);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,16 +37,11 @@
                 <?php
                     while($user_data = mysqli_fetch_assoc($result)) {
                         echo "<tr>";
-                        echo "<td>".$user_data['id']."</td>";
-                        echo "<td>".$user_data['nome']."</td>";
-                        echo "<td>".$user_data['senha']."</td>";
-                        echo "<td>".$user_data['email']."</td>";
-                        echo "<td>".$user_data['telefone']."</td>";
-                        echo "<td>".$user_data['sexo']."</td>";
-                        echo "<td>".$user_data['data_nasc']."</td>";
-                        echo "<td>".$user_data['cidade']."</td>";
-                        echo "<td>".$user_data['estado']."</td>";
-                        echo "<td>".$user_data['endereco']."</td>";
+                        echo "<td>".$user_data['id_coletivo']."</td>";
+                        echo "<td>".$user_data['nomes']."</td>";
+                        echo "<td>".$user_data['equipe']."</td>";
+                        echo "<td>".$user_data['modalidade']."</td>";
+                        echo "<td>".$user_data['serie']."</td>";
                         echo "<td>
                         <a class='btn btn-sm btn-primary' href='edit.php?id=$user_data[id]' title='Editar'>
                             <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pencil' viewBox='0 0 16 16'>
