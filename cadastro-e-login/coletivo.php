@@ -16,7 +16,7 @@
         $serie = $_POST['serie'];
         
 
-        $result = mysqli_query($conexao, "INSERT INTO coletivo(nomes,equipe,modalidade,serie) 
+         $result = mysqli_query($conexao, "INSERT INTO coletivo(nomes,equipe,modalidade,serie) 
         VALUES ('$nomes','$equipe','$modalidade','$serie')");
 
         header('Location: coletivo.php');
@@ -60,7 +60,7 @@
                 <br></br>
                 <section>
     <button type="submit" name="submit" value="Agendar">Enviar</button>
-    <button type="submit" name="submit" value=""><a href="../listar.php">Outras Equipes</a></button>
+    <button type="submit" name="submit" value=""><a href="formulario.php">Outras Equipes</a></button>
                 </section>
             </fieldset>
         </form>

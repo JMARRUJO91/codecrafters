@@ -66,8 +66,8 @@
     </div>
     <h1>Adm</h1>
     <div class="box">
-        <a href="./cadastro-e-login/login_adm.php">Login Adm</a>
-        <a href="./cadastro-e-login/cadastro.php">Cadastro Adm</a>
+        <a href="cadastro-e-login/login.php">Login adm</a>
+        <a href="cadastro-e-login/cadastro.php">Cadastro Adm</a>
     </div>
 
 </section>
