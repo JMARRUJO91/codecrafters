@@ -16,11 +16,13 @@ body, p {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 300px px 100px;
+    grid-template-rows: 300px auto auto 100px;
     grid-template-areas:
     "cabecalho cabecalho"
 
     "secao barra-lateral"
+
+    "sobre sobre"
 
     "rodape rodape";
 }
@@ -37,7 +39,26 @@ section {
     background-color: rgb(255, 255, 255);
     border: 2px solid white;
     padding: 20px;
-   
+    display: flex;
+}
+
+.container {
+    grid-area: sobre;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+ 
+        color: rgba(63, 118, 189, 1);
+
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333; /* Cor do texto padrão */
+
 }
 
 aside {
@@ -47,6 +68,8 @@ aside {
     border: 2px solid white;
     margin: 20px;
 }
+
+
 
 footer {
     grid-area: rodape;
@@ -90,7 +113,6 @@ footer {
 }
 #menu img {
     left: 0;
-    padding: 0 20px 0 20px;
     height: 170px;
     width: 170px;
 }
