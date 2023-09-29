@@ -43,7 +43,6 @@
     </style>
 </head>
 <body>
-    <a href="../inscricoes.php">Voltar</a>
     <div>
         <h1>Login</h1>
         <form action="testLogin.php" method="POST">
@@ -53,6 +52,7 @@
             <br><br>
             <input class="inputSubmit" type="submit" name="submit" value="Enviar">
         </form>
+        <button type="submit" name="submit" value=""><a href="../inscricoes.php">Voltar</a></button>
     </div>
 </body>
 </html>
