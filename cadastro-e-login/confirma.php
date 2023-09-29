@@ -17,7 +17,7 @@
     <h1>Parabéns você foi logado com sucesso!</h1>
     <h2>escolha seu método de inscrição</h2>
     <div class="">
-        <a href="coletivo.php">Equipes | Coletivo</a>
+        <a href="formulario.php">Equipes | Coletivo</a>
         <a href="individual.php">Individual | Sozinho</a>
     </div>
     <div class="a">
