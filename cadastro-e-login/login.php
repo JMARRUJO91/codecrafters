@@ -6,27 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
     <style>
-        body{
+        
+        body {
             font-family: Arial, Helvetica, sans-serif;
             background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        div{
+
+        div {
             background-color: rgba(0, 0, 0, 0.6);
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             padding: 80px;
             border-radius: 15px;
             color: #fff;
+            text-align: center;
         }
-        input{
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        input {
             padding: 15px;
             border: none;
             outline: none;
             font-size: 15px;
+            width: 88%;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            margin-right: 30px;
         }
-        .inputSubmit{
+
+        .inputSubmit {
             background-color: dodgerblue;
             border: none;
             padding: 15px;
@@ -34,17 +54,22 @@
             border-radius: 10px;
             color: white;
             font-size: 15px;
-            
-        }
-        .inputSubmit:hover{
-            background-color: deepskyblue;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
 
-        a .inputSubmit{
-        width: 50px;
+        .inputSubmit:hover {
+            background-color: deepskyblue;
         }
 
+        a.inputSubmit {
+            background-color: #dc3545;
+            text-decoration: none;
+        }
+
+        a.inputSubmit:hover {
+            background-color: #a3232e;
+        }
     </style>
 </head>
 <body>
@@ -57,8 +82,7 @@
             <br><br>
             <input class="inputSubmit" type="submit" name="submit" value="Enviar">
         </form>
-        <a class="inputSubmit" href="../inscricoes.php">Voltar</a></button>
-        
+        <a class="inputSubmit" href="../inscricoes.php">Voltar</a>
     </div>
 </body>
 </html>

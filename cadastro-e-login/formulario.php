@@ -1,20 +1,3 @@
-<?php
-
-    if(isset($_POST['submit']))
-    {
-        include_once('config.php');
-
-        $nomes = $_POST['nomes'];
-        $equipe = $_POST['equipe'];
-        $modalidade = $_POST['modalidade'];
-        $serie = $_POST['serie'];
-        $result = mysqli_query($conexao, "INSERT INTO coletivo(nomes,equipe,modalidade,serie) 
-        VALUES ('$nomes','$equipe','$modalidade','$serie')");
-
-        header('Location: login.php');
-    }
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +9,12 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .box{
             color: white;
@@ -38,7 +27,6 @@
             border-radius: 15px;
             width: 20%;
         }
-
         fieldset{
             border: 3px solid dodgerblue;
         }
@@ -83,9 +71,9 @@
             font-size: 15px;
         }
         #submit{
-            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
             width: 100%;
-            height: 200px
+            height: 50px;
             border: none;
             text-decoration: none;
             padding: 15px;
@@ -93,12 +81,12 @@
             font-size: 15px;
             cursor: pointer;
             border-radius: 10px;
+            margin-top: 20px;
         }
         #submit:hover{
-            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+            background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
         }
-
-        .botaolistar{
+        .button-listar {
             background-color: dodgerblue;
             border: none;
             padding: 15px;
@@ -106,10 +94,24 @@
             border-radius: 10px;
             color: white;
             font-size: 15px;
+            margin-top: 20px;
         }
-
-        .botaolistar:hover{
+        .button-listar:hover{
             background-color: deepskyblue;
+            cursor: pointer;
+        }
+        .button-voltar {
+            background-color: #dc3545;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+        .button-voltar:hover{
+            background-color: #a3232e;
             cursor: pointer;
         }
     </style>
@@ -122,29 +124,28 @@
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nomes" id="nomes" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome dos participantes:</label>
+                    <label for="nomes" class="labelInput">Nome dos participantes:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="equipe" id="equipe" class="inputUser"required >
-                    <label for="senha" class="labelInput">Nome da equipe:</label>
+                    <input type="text" name="equipe" id="equipe" class="inputUser" required>
+                    <label for="equipe" class="labelInput">Nome da equipe:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="modalidade" id="modalidade" class="inputUser" required>
-                    <label for="email" class="labelInput">Modalidade:</label>
+                    <label for="modalidade" class="labelInput">Modalidade:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="serie" id="serie" class="inputUser"required>
-                    <label for="email" class="labelInput">Série:</label>
+                    <input type="text" name="serie" id="serie" class="inputUser" required>
+                    <label for="serie" class="labelInput">Série:</label>
                 </div>
                 <br><br>
-            <input class="" type="submit" name="submit" value="Enviar">
-            <button type="submit" name="submit" value=""><a class="" href="sistema.php">Equipes</a></button>
-            <button type="submit" name="submit" value=""> <a class="" href="confirma.php">Voltar</a></button>
+                <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+                <button class="button-listar" type="submit" name="submit" value=""><a href="sistema.php">Equipes</a></button>
+                <button class="button-voltar" type="submit" name="submit" value=""><a href="confirma.php">Voltar</a></button>
             </fieldset>
         </form>
     </div>
 </body>
-</html>
