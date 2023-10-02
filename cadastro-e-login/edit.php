@@ -131,7 +131,7 @@
                     <label for="email" class="labelInput">Série:</label>
                 </div>
                 <br><br>
-				<input type="hidden" name="id">
+				<input type="hidden" name="id_coletivo">
                 <input type="submit" name="update" id="submit">
             </fieldset>
         </form>
