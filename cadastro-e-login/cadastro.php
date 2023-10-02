@@ -111,7 +111,7 @@ if (isset($_POST['submit'])) {
 </head>
 <body>
     <div>
-        <h2>Cadastro de Administrador</h2>
+        <h2>Inscrição</h2>
         <form action="cadastro.php" method="POST">
             <table>
                 <tr>
