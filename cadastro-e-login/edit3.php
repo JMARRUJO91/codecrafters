@@ -122,9 +122,9 @@
                     <label for="senha" class="labelInput">Nova senha:</label>
                 </div>
                 <section>
-<input type="hidden" name="id_individual" value="<?php echo $id_individual;?>">
+<input type="hidden" name="id" value="<?php echo $id;?>">
     <input type="submit" name="update" id="submit" value="Atualizar">
-    <button type="submit" name="submit" value=""><a class="" href="indi_lista.php">Voltar</a></button>
+    <button type="submit" name="submit" value=""><a class="" href="adm_lista.php">Voltar</a></button>
 </section>
             </fieldset>
         </form>

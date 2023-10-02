@@ -108,7 +108,7 @@
     <h1>Parabéns, você foi cadastrado com sucesso!</h1>
         <h2>Não esqueça seu nome de usuário e sua senha!</h2>
         <div class="button-container">
-            <a class="button" href="formulario.php">Realizar login</a>
+            <a class="button" href="login.php">Realizar login</a>
             <a class="button" href="cadastro.php">Cadastrar outro ADM</a>
         </div>
     </div>
