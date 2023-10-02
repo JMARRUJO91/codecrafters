@@ -16,7 +16,7 @@
         $result = mysqli_query($conexao, "INSERT INTO adm(nome,senha) 
         VALUES ('$nome','$senha')");
 
-        header('Location: cadastro.php');
+        header('Location: confirma2.php');
     }
 ?>
 <!DOCTYPE html>

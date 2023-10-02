@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,6 +31,18 @@
             margin-top:200px;
         }
 
+        .container2 {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 200px;
+        }
+
         h1 {
             font-size: 24px;
             margin-bottom: 20px;
@@ -58,6 +69,16 @@
             transition: background-color 0.3s;
         }
 
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 70px;
+            transition: background-color 0.3s;
+        }
+
         .button:hover {
             background-color: #0056b3;
         }
@@ -76,6 +97,7 @@
             text-align: center;
             padding: 10px 0;
         }
+
     </style>
 </head>
 <body>
@@ -83,22 +105,26 @@
        
     </header>
     <div class="container">
-    <h1>Parabéns, você foi logado com sucesso!</h1>
-        <h2>Escolha seu método de inscrição:</h2>
+    <h1>Parabéns, você foi cadastrado com sucesso!</h1>
+        <h2>Não esqueça seu nome de usuário e sua senha!</h2>
         <div class="button-container">
-            <a class="button" href="formulario.php">Equipes | Coletivo</a>
-            <a class="button" href="individual.php">Individual | Sozinho</a>
+            <a class="button" href="formulario.php">Realizar login</a>
+            <a class="button" href="individual.php">Cadastrar outro ADM</a>
         </div>
     </div>
     <footer>
-        <div class="admin-panel-link">
+
+    
+    <div class="container2">
             <a class="button button-admin" href="adm_lista.php">Painel de administradores</a>
-        </div>
-    </footer>
+
+ 
     <nav>
             <ul>
                <a class="button button-back" href="login.php">Voltar</a>
             </ul>
         </nav>
+        </div>
+        </footer>
 </body>
 </html>
