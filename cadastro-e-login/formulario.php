@@ -11,7 +11,7 @@
         $result = mysqli_query($conexao, "INSERT INTO coletivo(nomes,equipe,modalidade,serie) 
         VALUES ('$nomes','$equipe','$modalidade','$serie')");
 
-        header('Location: login.php');
+        header('Location: sistema.php');
     }
 
 ?>
