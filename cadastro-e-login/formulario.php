@@ -141,10 +141,9 @@
                     <label for="email" class="labelInput">Série:</label>
                 </div>
                 <br><br>
-                <input class="botaolistar" type="submit" name="submit" value="Enviar">
-    <a class="botaolistar" href="sistema.php">Equipes</a></button>
-    <a class="botaolistar" href="confirma.php">Voltar</a></button>
-                
+            <input class="" type="submit" name="submit" value="Enviar">
+            <button type="submit" name="submit" value=""><a class="" href="sistema.php">Equipes</a></button>
+            <button type="submit" name="submit" value=""> <a class="" href="confirma.php">Voltar</a></button>
             </fieldset>
         </form>
     </div>

@@ -3,7 +3,7 @@
 
     if(!empty($_GET['id_individual']))
     {
-        $id = $_GET['id_individual'];
+        $id_individual = $_GET['id_individual'];
         $sqlSelect = "SELECT * FROM individual WHERE id_individual=$id_individual";
         $result = $conexao->query($sqlSelect);
         if($result->num_rows > 0)
@@ -24,7 +24,11 @@
         {
             header('Location: indi_lista.php');
         }
-    }
+        
+        
+}
+    
+    
     
     
 ?>
@@ -152,8 +156,9 @@
                 </div>
                 <br></br>
 <section>
-    <input class="" type="submit" name="submit" value="Enviar">
-    <a class="botaolistar" href="indi_lista.php">Voltar</a>
+<input type="hidden" name="id_individual" value="<?php echo $id_individual;?>">
+    <input type="submit" name="update" id="submit" value="Atualizar">
+    <button type="submit" name="submit" value=""><a class="" href="indi_lista.php">Voltar</a></button>
 </section>
             </fieldset>
         </form>

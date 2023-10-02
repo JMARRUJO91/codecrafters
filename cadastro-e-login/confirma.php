@@ -17,11 +17,11 @@
     <h1>Parabéns você foi logado com sucesso!</h1>
     <h2>escolha seu método de inscrição</h2>
     <div class="">
-    <a class="botaolistar" href="formulario.php">Equipes | Coletivo</a>
-    <a class="botaolistar" href="individual.php">Individual | Sozinho</a>
+    <a class="" href="formulario.php">Equipes | Coletivo</a>
+    <a class="" href="individual.php">Individual | Sozinho</a>
     </div>
     <div class="a">
-    <a class="botaolistar" href="../listaradmin.php">Painel de admininstradores</a>
+    <a class="" href="../listaradmin.php">Painel de admininstradores</a>
     </div>
 
 
