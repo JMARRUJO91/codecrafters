@@ -27,17 +27,17 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: -140px;
             margin-top:200px;
         }
 
         .container2 {
-            max-width: 800px;
+            max-width: 400px;
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            border-radius: 600px;
             text-align: center;
             margin-bottom: 50px;
             margin-top: 200px;
@@ -85,7 +85,7 @@
 
         .button-back {
             background-color: #dc3545;
-            margin-left:680px;
+            margin-left:20px;
         }
 
         .button-admin {
@@ -109,22 +109,16 @@
         <h2>Não esqueça seu nome de usuário e sua senha!</h2>
         <div class="button-container">
             <a class="button" href="formulario.php">Realizar login</a>
-            <a class="button" href="individual.php">Cadastrar outro ADM</a>
+            <a class="button" href="cadastro.php">Cadastrar outro ADM</a>
         </div>
     </div>
-    <footer>
-
-    
-    <div class="container2">
-            <a class="button button-admin" href="adm_lista.php">Painel de administradores</a>
-
  
-    <nav>
-            <ul>
-               <a class="button button-back" href="login.php">Voltar</a>
-            </ul>
-        </nav>
-        </div>
-        </footer>
+    <footer>
+    <div class="container2">
+        <a class="button button-admin" href="adm_lista.php">Painel de administradores</a>
+        <a class="button button-back" href="login.php">Voltar</a>
+    </div>
+</footer>
+
 </body>
 </html>
