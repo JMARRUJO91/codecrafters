@@ -1,0 +1,31 @@
+.eta{
+    margin-left: 400px;
+    margin-top: 420px;
+
+}
+.adm{
+    margin-top: 243px;
+    margin-left: 203px;
+    color: rgba(63, 118, 189, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(157, 186, 220, 1);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+}
+.caixa{
+    margin-left: 198px;
+    margin-top: 30px;
+    color: rgba(63, 118, 189, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(157, 186, 220, 1);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+}
