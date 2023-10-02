@@ -42,9 +42,8 @@
     <div class="principal">
         
             
-        
-
-                <div id="menu">
+        <header>
+            <div id="menu">
                     
                     <img src="imagens/logo1.png" width="400" height="450" >
                     <ul>
@@ -57,8 +56,12 @@
                         <li><a href="suporte.php">SUPORTE</a></li>
                         <li><a href="contato.html">CONTATO</a></li>
                     </ul>
-                    </div>
+                </div>
                     
+
+        </header>
+
+                
 
         <aside>
             
