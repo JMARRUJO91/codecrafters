@@ -6,7 +6,7 @@ if (isset($_POST['update'])) {
     $nome = $_POST['nome'];
     $senha = $_POST['senha'];
     // Usar declarações preparadas para evitar injeção SQL
-    $sqlUpdate = "UPDATE id 
+    $sqlUpdate = "UPDATE adm 
                   SET nome=?, senha=?
                   WHERE id=?";
     $stmt = $conexao->prepare($sqlUpdate);
@@ -28,5 +28,5 @@ if (isset($_POST['update'])) {
     }
 }
 
-header('Location: indi_lista.php');
+header('Location: adm_lista.php');
 ?>

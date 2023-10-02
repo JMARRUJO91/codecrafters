@@ -103,7 +103,6 @@
     </style>
 </head>
 <body>
-    <a href="adm_lista.php">Voltar</a>
     <div class="box">
         <form action="saveEdit3.php" method="POST">
             <fieldset>

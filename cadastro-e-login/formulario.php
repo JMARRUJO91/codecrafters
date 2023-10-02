@@ -1,3 +1,20 @@
+<?php
+
+    if(isset($_POST['submit']))
+    {
+        include_once('config.php');
+
+        $nomes = $_POST['nomes'];
+        $equipe = $_POST['equipe'];
+        $modalidade = $_POST['modalidade'];
+        $serie = $_POST['serie'];
+        $result = mysqli_query($conexao, "INSERT INTO coletivo(nomes,equipe,modalidade,serie) 
+        VALUES ('$nomes','$equipe','$modalidade','$serie')");
+
+        header('Location: sistema.php');
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
