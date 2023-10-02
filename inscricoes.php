@@ -57,24 +57,27 @@
         </aside>
         <section>
             <div>
-         <div class="caixa">
+         <div class="caixa"><div class="text">
                 <h1>Login</h1>
                 <form action="testLogin.php" method="POST">
                     <div>
+                    
                         <input type="text" name="nome" id="nome" placeholder="Usuário">
                     </div>
+                </div>
                     <br>
                     <input type="password" name="senha" placeholder="Senha">
                     <br><br>
-                    <a href="index.html" class="submit">Login</a>
+
+                    <a class="bot" href="index.html" class="submit">Login</a>
             </div>
 
 
             </div>
             <div class="adm"><h1>Login Administrador</h1>
             <div class="box">
-                <a href="cadastro-e-login/login.php">Login adm</a>
-                <a href="cadastro-e-login/cadastro.php">Cadastro Adm</a>
+                <a class="bot" href="cadastro-e-login/login.php">Login adm</a></br>
+                <a class="bot" href="cadastro-e-login/cadastro.php">Cadastro Adm</a>
     </div> 
         </div>
 
