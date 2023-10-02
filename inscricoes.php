@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="calendario/style.css">
     <link rel="stylesheet" href="headeraside.css">
     <link rel="stylesheet" href="inscricoes.css">
+    <link rel="stylesheet" href="rodape.css">
 </head>
 
 <body>
@@ -20,14 +21,14 @@
 
                 <img src="imagens/logo1.png" width="400" height="450">
                 <ul>
-                    <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="index.html">INÍCIO</a></li>
                     <li><a href="inscricoes.php">INSCRIÇÕES</a></li>
                     <li><a href="sobre.html">SOBRE</a></li>
                     <li><a href="galeria.html">GALERIA</a></li>
                     <li><a href="equipes.html">EQUIPES</a></li>
                     <li><a href="resultados.html">RESULTADOS</a></li>
                     <li><a href="suporte.php">SUPORTE</a></li>
-                </ul>
+                    <li><a href="contato.html">CONTATO</a></li>
             </div>
 
         </header>
@@ -83,9 +84,19 @@
 
         </section>
         <footer>
-            <br>
-            <br>
-        </footer>
+   
+   <ul>
+      
+       <li>
+            
+            <a href="#"> <img class="rodapeimg" src="imagens/facebook.png" alt="Logo da Alura">  </a>
+              <a href="#"> <img class="rodapeimg" src="imagens/logotipo-do-instagram.png" alt="Logo da Caelum"> </a>
+              <a href="#"> <img class="rodapeimg" src="imagens/twitter.png" alt="Logo da Casa do Código"> </a>
+          <a href="#"> <img class="rodapeimg2" src="imagens/Sesi-SP.jpg" alt="Logo do Sesi"> </a>
+       </li>
+   </ul>
+   
+</footer>
     </div>
 
 

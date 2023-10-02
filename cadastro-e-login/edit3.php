@@ -19,10 +19,7 @@
             header('Location: adm_lista.php');
         }
     }
-    else
-    {
-        header('Location: adm_lista.php');
-    }
+   
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -118,7 +115,7 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="password" name="senha" id="senha" class="inputUser" value=<?php echo $senha;?> required>
+                    <input type="text" name="senha" id="senha" class="inputUser" value=<?php echo $senha;?> required>
                     <label for="senha" class="labelInput">Nova senha:</label>
                 </div>
                 <section>

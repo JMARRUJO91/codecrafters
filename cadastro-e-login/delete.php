@@ -4,7 +4,7 @@
     {
         include_once('config.php');
 
-        $id = $_GET['id_coletivo'];
+        $id_coletivo = $_GET['id_coletivo'];
 
         $sqlSelect = "SELECT *  FROM coletivo WHERE id_coletivo=$id_coletivo";
 
