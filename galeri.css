@@ -7,6 +7,8 @@
 body, html {
   height: 100%;
   min-width: 400px;
+  font-style: italic;
+
 }
 
 body {

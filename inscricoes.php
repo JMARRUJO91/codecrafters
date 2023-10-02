@@ -25,10 +25,9 @@
                     <li><a href="inscricoes.php">INSCRIÇÕES</a></li>
                     <li><a href="sobre.html">SOBRE</a></li>
                     <li><a href="galeria.html">GALERIA</a></li>
-                    <li><a href="equipes.html">EQUIPES</a></li>
-                    <li><a href="resultados.html">RESULTADOS</a></li>
                     <li><a href="suporte.php">SUPORTE</a></li>
                     <li><a href="contato.html">CONTATO</a></li>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
             </div>
 
         </header>
@@ -57,46 +56,33 @@
 
         </aside>
         <section>
-            <div>
-         <div class="caixa"><div class="text">
-                <h1>Login</h1>
-                <form action="testLogin.php" method="POST">
-                    <div>
-                    
-                        <input type="text" name="nome" id="nome" placeholder="Usuário">
-                    </div>
+
+
+            <div class="adm">
+                <h1>INSCRIÇÕES</h1>
+                <div class="box">
+                    <a class="bot" href="cadastro-e-login/login.php">Login </a></br>
+                    <a class="bot" href="cadastro-e-login/cadastro.php">Cadastro </a>
                 </div>
-                    <br>
-                    <input type="password" name="senha" placeholder="Senha">
-                    <br><br>
-
-                    <a class="bot" href="index.html" class="submit">Login</a>
             </div>
-
-
-            </div>
-            <div class="adm"><h1>Login Administrador</h1>
-            <div class="box">
-                <a class="bot" href="cadastro-e-login/login.php">Login adm</a></br>
-                <a class="bot" href="cadastro-e-login/cadastro.php">Cadastro Adm</a>
-    </div> 
-        </div>
 
         </section>
         <footer>
-   
-   <ul>
-      
-       <li>
-            
-            <a href="#"> <img class="rodapeimg" src="imagens/facebook.png" alt="Logo da Alura">  </a>
-              <a href="#"> <img class="rodapeimg" src="imagens/logotipo-do-instagram.png" alt="Logo da Caelum"> </a>
-              <a href="#"> <img class="rodapeimg" src="imagens/twitter.png" alt="Logo da Casa do Código"> </a>
-          <a href="#"> <img class="rodapeimg2" src="imagens/Sesi-SP.jpg" alt="Logo do Sesi"> </a>
-       </li>
-   </ul>
-   
-</footer>
+
+            <ul>
+
+                <li>
+
+                    <a href="#"> <img class="rodapeimg" src="imagens/facebook.png" alt="Logo da Alura"> </a>
+                    <a href="#"> <img class="rodapeimg" src="imagens/logotipo-do-instagram.png" alt="Logo da Caelum"> </a>
+                    <a href="#"> <img class="rodapeimg" src="imagens/twitter.png" alt="Logo da Casa do Código"> </a>
+                    <a href="#"> <img class="rodapeimg2" src="imagens/Sesi-SP.jpg" alt="Logo do Sesi"> </a>
+                    <a href="termos.html">Termos de Uso</a> |
+                    <a href="politica.html">Política de Privacidade</a>
+                </li>
+            </ul>
+
+        </footer>
     </div>
 
 
