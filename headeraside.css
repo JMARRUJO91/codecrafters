@@ -16,7 +16,7 @@ body, p {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 193pxpx auto auto 100px;
+    grid-template-rows: 193px auto auto 100px;
     grid-template-areas:
     "cabecalho cabecalho"
 
@@ -91,7 +91,6 @@ footer {
     color: rgba(157, 186, 220, 1);
     font-weight: bold;
     font-size: 20pt;
-    width: 100vw;
     height: 25vh;
 }
 
