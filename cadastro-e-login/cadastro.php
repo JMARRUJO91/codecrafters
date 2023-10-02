@@ -1,51 +1,75 @@
 <?php
-if(isset($_POST['submit']))
-    {
-         print_r('Nome: ' . $_POST['nome']);
-         print_r('<br>');
-        
+if (isset($_POST['submit'])) {
+    include_once('config.php');
 
-        include_once('config.php');
+    $nome = $_POST['nome'];
+    $senha = $_POST['senha'];
 
-        $nome = $_POST['nome'];
-        $senha = $_POST['senha'];
-        
+    $result = mysqli_query($conexao, "INSERT INTO adm(nome, senha) 
+    VALUES ('$nome', '$senha')");
 
-        $result = mysqli_query($conexao, "INSERT INTO adm(nome,senha) 
-        VALUES ('$nome','$senha')");
-
+    if ($result) {
         header('Location: confirma2.php');
+        exit;
+    } else {
+        echo "Erro ao cadastrar o administrador. Por favor, tente novamente.";
     }
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CADASTRO</title>
+    <title>Cadastro | GREENCODE</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
             background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        div{
+
+        div {
             background-color: rgba(0, 0, 0, 0.6);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            padding: 80px;
+            width: 300px;
+            padding: 30px;
             border-radius: 15px;
             color: #fff;
+            text-align: center;
         }
-        input{
-            padding: 15px;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table tr td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
             border: none;
             outline: none;
             font-size: 15px;
+            border-radius: 5px;
         }
-        .inputSubmit{
+
+        .inputSubmit {
             background-color: dodgerblue;
             border: none;
             padding: 15px;
@@ -53,31 +77,57 @@ if(isset($_POST['submit']))
             border-radius: 10px;
             color: white;
             font-size: 15px;
-            
-        }
-        .inputSubmit:hover{
-            background-color: deepskyblue;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
 
-        a .inputSubmit{
-        width: 50px;
+        .inputSubmit:hover {
+            background-color: deepskyblue;
         }
 
+        .inputReturn {
+            background-color: #dc3545;
+            border: none;
+            padding: 15px;
+            width: 80%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+        }
+
+        .inputReturn:hover {
+            background-color: #a3232e;
+        }
     </style>
 </head>
 <body>
     <div>
-        <h1>Login</h1>
-        <form action="testLogin.php" method="POST">
-            <input type="text" name="nome" placeholder="Nome" required>
-            <br><br>
-            <input type="password" name="senha" placeholder="Senha" required>
-            <br><br>
-            <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+        <h2>Cadastro de Administrador</h2>
+        <form action="cadastro.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="text" name="nome" id="nome" required></td>
+                </tr>
+                <tr>
+                    <td><label for="senha">Senha:</label></td>
+                    <td><input type="password" name="senha" id="senha" required></td>
+                </tr>
+            </table>
+            <br>
+            <input class="inputSubmit" type="submit" name="submit" value="Cadastrar">
+            <br>
+            <a class="inputReturn" href="../inscricoes.php">Voltar</a>
         </form>
-        <a class="inputSubmit" href="../inscricoes.php">Voltar</a></button>
-        
     </div>
 </body>
 </html>
@@ -91,68 +141,5 @@ if(isset($_POST['submit']))
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
-        }
-        div{
-            background-color: rgba(0, 0, 0, 0.6);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            padding: 80px;
-            border-radius: 15px;
-            color: #fff;
-        }
-        input{
-            padding: 15px;
-            border: none;
-            outline: none;
-            font-size: 15px;
-        }
-        .inputSubmit{
-            background-color: dodgerblue;
-            border: none;
-            padding: 15px;
-            width: 100%;
-            border-radius: 10px;
-            color: white;
-            font-size: 15px;
-            
-        }
-        .inputSubmit:hover{
-            background-color: deepskyblue;
-            cursor: pointer;
-        }
 
-        a .inputSubmit{
-        width: 50px;
-        }
-
-    </style>
-</head>
-<body>
-    <div>
-        <h1>Login</h1>
-        <form action="testLogin.php" method="POST">
-            <input type="text" name="nome" placeholder="Nome" required>
-            <br><br>
-            <input type="password" name="senha" placeholder="Senha" required>
-            <br><br>
-            <input class="inputSubmit" type="submit" name="submit" value="Enviar">
-        </form>
-        <a class="inputSubmit" href="../inscricoes.php">Voltar</a></button>
-        
-    </div>
-</body>
-</html>
  

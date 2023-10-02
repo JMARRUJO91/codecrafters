@@ -118,21 +118,21 @@
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="equipe" id="equipe" class="inputUser">
-                    <label for="senha" class="labelInput">Nome da equipe:</label>
+                    <label for="equipe" class="labelInput">Nome da equipe:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="modalidade" id="modalidade" class="inputUser">
-                    <label for="email" class="labelInput">Modalidade:</label>
+                    <label for="modalidade" class="labelInput">Modalidade:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="serie" id="serie" class="inputUser">
-                    <label for="email" class="labelInput">Série:</label>
+                    <label for="serie" class="labelInput">Série:</label>
                 </div>
                 <br><br>
-				<input type="hidden" name="id_coletivo">
-                <input type="submit" name="update" id="submit">
+	<input type="hidden" name="id_coletivo" value="<?php echo $id_coletivo;?>">
+    <input type="submit" name="update" id="submit" value="Atualizar">
             </fieldset>
         </form>
     </div>
