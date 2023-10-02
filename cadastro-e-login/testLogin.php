@@ -20,7 +20,7 @@
         {
             unset($_SESSION['nome']);
             unset($_SESSION['senha']);
-            header('Location: cadastro.php');
+            header('Location: erro.html');
         }
         else
         {

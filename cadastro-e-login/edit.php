@@ -3,7 +3,7 @@
 
     if(!empty($_GET['id_coletivo']))
     {
-        $id = $_GET['id_coletivo'];
+        $id_coletivo = $_GET['id_coletivo'];
         $sqlSelect = "SELECT * FROM coletivo WHERE id_coletivo=$id_coletivo";
         $result = $conexao->query($sqlSelect);
         if($result->num_rows > 0)
@@ -112,25 +112,26 @@
                 <legend><b>Editar Equipe</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nomes" id="nomes" class="inputUser" value=<?php echo $nomes;?> required>
+                    <input type="text" name="nomes" id="nomes" class="inputUser">
                     <label for="nomes" class="labelInput">Nome dos participantes:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="equipe" id="equipe" class="inputUser" value=<?php echo $equipe;?> required>
+                    <input type="text" name="equipe" id="equipe" class="inputUser">
                     <label for="senha" class="labelInput">Nome da equipe:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="modalidade" id="modalidade" class="inputUser" value=<?php echo $modalidade;?> required>
+                    <input type="text" name="modalidade" id="modalidade" class="inputUser">
                     <label for="email" class="labelInput">Modalidade:</label>
                 </div>
+                <br><br>
                 <div class="inputBox">
-                    <input type="text" name="serie" id="serie" class="inputUser" value=<?php echo $serie;?> required>
+                    <input type="text" name="serie" id="serie" class="inputUser">
                     <label for="email" class="labelInput">Série:</label>
                 </div>
                 <br><br>
-				<input type="hidden" name="id" value=<?php echo $id;?>>
+				<input type="hidden" name="id">
                 <input type="submit" name="update" id="submit">
             </fieldset>
         </form>
