@@ -53,6 +53,9 @@ body > footer {
     width: 100%;
     text-align: center;
     text-align-last: center;
+    
+        max-width: 1200px;
+    
   }
   
   .gallery-main {
@@ -220,4 +223,8 @@ footer ul li {
     color: #333; /* Cor do texto padrão */
     max-width: 1000px;
 
+}
+
+.caixa {
+    max-width: 1200px;
 }
