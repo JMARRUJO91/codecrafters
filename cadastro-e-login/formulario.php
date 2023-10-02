@@ -115,7 +115,6 @@
     </style>
 </head>
 <body>
-    <a href="../inscricoes.php">Voltar</a>
     <div class="box">
         <form action="formulario.php" method="POST">
             <fieldset>

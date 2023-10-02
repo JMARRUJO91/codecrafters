@@ -49,7 +49,7 @@
 </head>
 <body>
     <div>
-        <h1>Login</h1>
+        <h1>LOGIN</h1>
         <form action="testLogin.php" method="POST">
             <input type="text" name="nome" placeholder="Nome" required>
             <br><br>

@@ -31,12 +31,18 @@
             justify-content: center;
             gap: .1%;
         }
+
+
+        .navbar-brand{
+            MARGIN-LEFT: 620PX;
+        }
+
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">| COLETIVO</a>
+            <a class="navbar-brand" href="#">LISTA DE EQUIPES</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

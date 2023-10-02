@@ -46,12 +46,16 @@
         .botaolistar:hover{
             background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
         }
+
+        .navbar-brand{
+            MARGIN-LEFT: 620PX;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"> | INDIVIDUAL</a>
+            <a class="navbar-brand" href="#"> LISTA DE INSCRIÇÕES INDIVIDUAIS</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -67,7 +71,7 @@
         <table class="table text-white table-bg">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
+                    <th scope="col">ID</th>
                     <th scope="col">Nome</th>
                     <th scope="col">Idade</th>
                     <th scope="col">Modalidade</th>
