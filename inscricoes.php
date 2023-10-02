@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="calendario/style.css">
     <link rel="stylesheet" href="headeraside.css">
+    <link rel="stylesheet" href="inscricoes.css">
 </head>
 
 <body>
@@ -56,6 +57,7 @@
         </aside>
         <section>
             <div>
+         <div class="caixa">
                 <h1>Login</h1>
                 <form action="testLogin.php" method="POST">
                     <div>
@@ -65,15 +67,16 @@
                     <input type="password" name="senha" placeholder="Senha">
                     <br><br>
                     <a href="index.html" class="submit">Login</a>
-
+            </div>
 
 
             </div>
-            <h1>Adm</h1>
+            <div class="adm"><h1>Login Administrador</h1>
             <div class="box">
                 <a href="cadastro-e-login/login.php">Login adm</a>
                 <a href="cadastro-e-login/cadastro.php">Cadastro Adm</a>
-            </div>
+    </div> 
+        </div>
 
         </section>
         <footer>
