@@ -105,11 +105,11 @@
        
     </header>
     <div class="container">
-    <h1>Parabéns, você foi logado com sucesso!</h1>
-        <h2>Escolha seu método de inscrição!</h2>
+    <h1>Parabéns, você foi cadastrado com sucesso!</h1>
+        <h2>Não esqueça seu nome de usuário e sua senha!</h2>
         <div class="button-container">
-            <a class="button" href="individual.php">Solo | Individual</a>
-            <a class="button" href="formulario.php">Equipe | Coletivo</a>
+            <a class="button" href="login.php">Realizar login</a>
+            <a class="button" href="cadastro.php">Cadastrar outro ADM</a>
         </div>
     </div>
  

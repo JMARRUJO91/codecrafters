@@ -1,7 +1,5 @@
 <?php
-
-
-    if(isset($_POST['submit']))
+if(isset($_POST['submit']))
     {
          print_r('Nome: ' . $_POST['nome']);
          print_r('<br>');
@@ -16,7 +14,7 @@
         $result = mysqli_query($conexao, "INSERT INTO adm(nome,senha) 
         VALUES ('$nome','$senha')");
 
-        header('Location: cadastro.php');
+        header('Location: confirma2.php');
     }
 ?>
 <!DOCTYPE html>
@@ -25,31 +23,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro | GREENCODE</title>
+    <title>CADASTRO</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+        }
+        div{
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: #fff;
+        }
+        input{
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+        .inputSubmit{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            
+        }
+        .inputSubmit:hover{
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+
+        a .inputSubmit{
+        width: 50px;
+        }
+
+    </style>
 </head>
 <body>
-    <a href="../inscricoes.php">Voltar</a>
-    <div class="box">
-        <form action="cadastro.php" method="POST">
-            <fieldset>
-                <legend><b>Cadastro de Administrador</b></legend>
-                <br>
-                <div class="">
-                    <input type="text" name="nome" id="nome" required>
-                    <label for="nome" >Nome</label>
-                </div>
-                <br>
-                <div class="">
-                    <input type="password" name="senha" id="senha" required>
-                    <label for="senha" >Senha</label>
-                </div>
-                <br><br>
-                <input type="submit" name="submit" id="submit">
-            </fieldset>
+    <div>
+        <h1>Login</h1>
+        <form action="testLogin.php" method="POST">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <br><br>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <br><br>
+            <input class="inputSubmit" type="submit" name="submit" value="Enviar">
         </form>
+        <a class="inputSubmit" href="../inscricoes.php">Voltar</a></button>
+        
     </div>
-
 </body>
 </html>
 
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+        }
+        div{
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: #fff;
+        }
+        input{
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+        .inputSubmit{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            
+        }
+        .inputSubmit:hover{
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+
+        a .inputSubmit{
+        width: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Login</h1>
+        <form action="testLogin.php" method="POST">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <br><br>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <br><br>
+            <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+        </form>
+        <a class="inputSubmit" href="../inscricoes.php">Voltar</a></button>
+        
+    </div>
+</body>
+</html>
  

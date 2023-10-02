@@ -1,19 +1,28 @@
 <?php
+    include_once('config.php');
 
-    if(isset($_POST['submit']))
+    if(!empty($_GET['id']))
     {
-        include_once('config.php');
-
-        $nomes = $_POST['nomes'];
-        $equipe = $_POST['equipe'];
-        $modalidade = $_POST['modalidade'];
-        $serie = $_POST['serie'];
-        $result = mysqli_query($conexao, "INSERT INTO coletivo(nomes,equipe,modalidade,serie) 
-        VALUES ('$nomes','$equipe','$modalidade','$serie')");
-
-        header('Location: login.php');
+        $id = $_GET['id'];
+        $sqlSelect = "SELECT * FROM adm WHERE id=$id";
+        $result = $conexao->query($sqlSelect);
+        if($result->num_rows > 0)
+        {
+            while($user_data = mysqli_fetch_assoc($result))
+            {
+                $nome = $user_data['nome'];
+                $senha = $user_data['senha'];
+            }
+        }
+        else
+        {
+            header('Location: adm_lista.php');
+        }
     }
-
+    else
+    {
+        header('Location: adm_lista.php');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +30,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário | GN</title>
+    <title>Atualizar ADM</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +47,6 @@
             border-radius: 15px;
             width: 20%;
         }
-
         fieldset{
             border: 3px solid dodgerblue;
         }
@@ -85,9 +93,7 @@
         #submit{
             background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
             width: 100%;
-            height: 200px
             border: none;
-            text-decoration: none;
             padding: 15px;
             color: white;
             font-size: 15px;
@@ -97,53 +103,29 @@
         #submit:hover{
             background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
         }
-
-        .botaolistar{
-            background-color: dodgerblue;
-            border: none;
-            padding: 15px;
-            width: 100%;
-            border-radius: 10px;
-            color: white;
-            font-size: 15px;
-        }
-
-        .botaolistar:hover{
-            background-color: deepskyblue;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
-    <a href="../inscricoes.php">Voltar</a>
+    <a href="adm_lista.php">Voltar</a>
     <div class="box">
-        <form action="formulario.php" method="POST">
+        <form action="saveEdit3.php" method="POST">
             <fieldset>
-                <legend><b>Adicionar equipe</b></legend>
+                <legend><b>Atualizar Admininstradores</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nomes" id="nomes" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome dos participantes:</label>
+                    <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required>
+                    <label for="nome" class="labelInput">Nome do admininstrador:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="equipe" id="equipe" class="inputUser"required >
-                    <label for="senha" class="labelInput">Nome da equipe:</label>
+                    <input type="password" name="senha" id="senha" class="inputUser" value=<?php echo $senha;?> required>
+                    <label for="senha" class="labelInput">Nova senha:</label>
                 </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="modalidade" id="modalidade" class="inputUser" required>
-                    <label for="email" class="labelInput">Modalidade:</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="serie" id="serie" class="inputUser"required>
-                    <label for="email" class="labelInput">Série:</label>
-                </div>
-                <br><br>
-            <input class="" type="submit" name="submit" value="Enviar">
-            <button type="submit" name="submit" value=""><a class="" href="sistema.php">Equipes</a></button>
-            <button type="submit" name="submit" value=""> <a class="" href="confirma.php">Voltar</a></button>
+                <section>
+<input type="hidden" name="id" value="<?php echo $id;?>">
+    <input type="submit" name="update" id="submit" value="Atualizar">
+    <button type="submit" name="submit" value=""><a class="" href="adm_lista.php">Voltar</a></button>
+</section>
             </fieldset>
         </form>
     </div>
