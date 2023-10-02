@@ -4,7 +4,7 @@
 
 }
 .adm{
-    margin-top: 243px;
+    margin-top: 194px;
     margin-left: 203px;
     color: rgba(63, 118, 189, 1);
     position: absolute;
@@ -18,7 +18,7 @@
 }
 .caixa{
     margin-left: 198px;
-    margin-top: 30px;
+    margin-top: -30px;
     color: rgba(63, 118, 189, 1);
     position: absolute;
     top: 50%;
@@ -28,4 +28,20 @@
     padding: 15px;
     border-radius: 15px;
     width: 20%;
+}
+.bot{
+    border-radius: 25px; /* Isso define o raio das bordas para torná-lo arredondado */
+    background-color: rgba(63, 118, 189, 1); /* Cor de fundo */
+    border: none; /* Remova a borda */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (ajuste conforme necessário) */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remova sublinhado padrão */
+    display: inline-block; /* Isso faz com que o botão se comporte como um elemento em linha */
+    font-size: 16px; /* Tamanho da fonte (ajuste conforme necessário) */
+    margin: 4px 2px; /* Margem (ajuste conforme necessário) */
+    cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
+}
+text{
+    border-radius: 25px;
 }
