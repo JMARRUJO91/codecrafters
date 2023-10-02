@@ -1,25 +1,21 @@
 <?php
 
-if (!empty($_GET['id_individual'])) {
-    include_once('config.php');
-    
-    $id_individual = $_GET['id_individual'];
+    if(!empty($_GET['id_individual']))
+    {
+        include_once('config.php');
 
-    // Use prepared statements para evitar injeção SQL
-    $sqlSelect = "SELECT * FROM individual WHERE id_individual = ?";
-    $stmtSelect = $conexao->prepare($sqlSelect);
-    $stmtSelect->bind_param("i", $id_individual);
-    $stmtSelect->execute();
-    $resultSelect = $stmtSelect->get_result();
+        $id_individual = $_GET['id_individual'];
 
-    if ($resultSelect->num_rows > 0) {
-        // Utilize prepared statements para a exclusão
-        $sqlDelete = "DELETE FROM individual WHERE id_individual = ?";
-        $stmtDelete = $conexao->prepare($sqlDelete);
-        $stmtDelete->bind_param("i", $id_individual);
-        $stmtDelete->execute();
+        $sqlSelect = "SELECT *  FROM individual WHERE id_individual=$id_individual";
+
+        $result = $conexao->query($sqlSelect);
+
+        if($result->num_rows > 0)
+        {
+            $sqlDelete = "DELETE FROM individual WHERE id_individual=$id_individual";
+            $resultDelete = $conexao->query($sqlDelete);
+        }
     }
-}
-
-header('Location: indi_lista.php');
+    header('Location: indi_lista.php');
+   
 ?>
