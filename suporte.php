@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
             <div class="calendar">
                 <h1>Calendário</h1>
                 <div class="countdown">
-                    <h2>Contagem Regressiva para 10/10/2023</h2>
+                <h2>Contagem Regressiva para 17/10/2023</h2>
                     <div id="countdown-timer">
                         <span id="days"></span> dias
                         <span id="hours"></span> horas

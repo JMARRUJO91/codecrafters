@@ -106,11 +106,11 @@
     <div class="box">
         <form action="saveEdit3.php" method="POST">
             <fieldset>
-                <legend><b>Atualizar Admininstradores</b></legend>
+                <legend><b>Atualizar </b></legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required>
-                    <label for="nome" class="labelInput">Nome do admininstrador:</label>
+                    <label for="nome" class="labelInput">Nome do inscrito:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">

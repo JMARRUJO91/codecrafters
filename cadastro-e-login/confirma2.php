@@ -110,13 +110,13 @@
         <h2>Não esqueça seu nome de usuário e sua senha!</h2>
         <div class="button-container">
             <a class="button" href="login.php">Realizar login</a>
-            <a class="button" href="cadastro.php">Cadastrar outro ADM</a>
+            <a class="button" href="cadastro.php">Cadastrar outro </a>
         </div>
     </div>
  
     <footer>
     <div class="container2">
-        <a class="button button-admin" href="adm_lista.php">Painel de administradores</a>
+        <a class="button button-admin" href="adm_lista.php">Painel de cadastrados</a>
         <a class="button button-back" href="login.php">Voltar</a>
     </div>
 </footer>
