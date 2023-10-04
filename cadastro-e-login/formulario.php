@@ -11,7 +11,7 @@
         $result = mysqli_query($conexao, "INSERT INTO coletivo(nomes,equipe,modalidade,serie) 
         VALUES ('$nomes','$equipe','$modalidade','$serie')");
 
-        header('Location: sistema.php');
+        header('Location: formulario.php');
     }
 
 ?>
@@ -32,6 +32,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background: url("../imagens/fundodaora.jpeg");
         }
         .box{
             color: white;
@@ -131,6 +132,77 @@
             background-color: #a3232e;
             cursor: pointer;
         }
+
+        .inputReturn {
+            background-color: #dc3545;
+            border: none;
+            padding: 15px;
+            width: 80%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+        }
+
+        .inputReturn:hover {
+            background-color: #a3232e;
+        }
+
+        .inputReturn1 {
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+        }
+
+        .inputReturn2 {
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .inputReturn3 {
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .inputReturn1:hover {
+            background-color:green;
+        }
+
+        .inputReturn2:hover {
+            background-color:#42426F;
+        }
+
+        .inputReturn3:hover {
+            background-color: #FF0000;
+        }
     </style>
 </head>
 <body>
@@ -159,9 +231,12 @@
                     <label for="serie" class="labelInput">Série:</label>
                 </div>
                 <br><br>
-                <input class="inputSubmit" type="submit" name="submit" value="Enviar">
-                <button class="button-listar" type="submit" name="submit" value=""><a href="sistema.php">Equipes</a></button>
-                <button class="button-voltar" type="submit" name="submit" value=""><a href="confirma.php">Voltar</a></button>
+                <input class="inputReturn1" type="submit" name="submit" value="Enviar">
+<br><br>
+                <a class="inputReturn2" href="indi_lista.php">Equipes</a>
+            <br><br><br>
+            <a class="inputReturn3" href="confirma.php">Voltar</a>
+            <br><br>
             </fieldset>
         </form>
     </div>

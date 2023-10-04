@@ -38,7 +38,7 @@ if(isset($_POST['submit']))
 <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            background: url("../imagens/fundodaora.jpeg");
         }
         .box{
             color: white;
@@ -50,6 +50,7 @@ if(isset($_POST['submit']))
             padding: 15px;
             border-radius: 15px;
             width: 20%;
+
         }
         fieldset{
             border: 3px solid dodgerblue;
@@ -107,6 +108,57 @@ if(isset($_POST['submit']))
         #submit:hover{
             background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
         }
+
+        .inputReturn1 {
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+        }
+
+        .inputReturn2 {
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .inputReturn3 {
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .inputReturn1:hover {
+            background-color:green;
+        }
+
+        .inputReturn2:hover {
+            background-color:#42426F;
+        }
+
+        .inputReturn3:hover {
+            background-color: #FF0000;
+        }
         </style>
 
 
@@ -152,12 +204,16 @@ if(isset($_POST['submit']))
                 </div>
                 <br></br>
 <section>
-    <input class="inputBox" type="submit" name="submit" value="Enviar">
-    <button type="submit" name="submit" value=""><a class="" href="indi_lista.php">Competidores</a></button>
-    <button type="submit" name="submit" value=""><a class="" href="confirma.php">Voltar</a></button>
+<input class="inputReturn1" type="submit" name="submit" value="Enviar">
+<br><br>
+                <a class="inputReturn2" href="indi_lista.php">Inscrições</a>
+            <br><br><br>
+            <a class="inputReturn3" href="confirma.php">Voltar</a>
+            <br><br>
 </section>
             </fieldset>
         </form>
     </div>
 </body>
 </html>
+
