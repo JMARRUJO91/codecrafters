@@ -127,10 +127,18 @@
                     <label for="modalidade" class="labelInput">Modalidade:</label>
                 </div>
                 <br><br>
-                <div class="inputBox">
-                    <input type="text" name="serie" id="serie" class="inputUser">
-                    <label for="serie" class="labelInput">Série:</label>
-                </div>
+                <label for="serie">Selecione a série escolar:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+  <option value="6ºEF">
+  <option value="7ºEF">
+  <option value="8ºEF">
+  <option value="9ºEF">
+  <option value="1ºEM">
+  <option value="2ºEM">
+  <option value="3ºEM">
+</datalist>
                 <br><br>
 	<input type="hidden" name="id_coletivo" value="<?php echo $id_coletivo;?>">
     <input type="submit" name="update" id="submit" value="Atualizar">
