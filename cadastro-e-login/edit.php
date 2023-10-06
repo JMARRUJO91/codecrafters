@@ -127,9 +127,9 @@
                 </div>
                 <br><br>
                 <label for="serie">Selecione a série escolar:</label>
-<input list="browsers" name="browser" id="browser">
+<input list="series" name="serie" id="serie">
 
-<datalist id="browsers">
+<datalist id="series">
   <option value="6ºEF">
   <option value="7ºEF">
   <option value="8ºEF">
