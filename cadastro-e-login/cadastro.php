@@ -27,13 +27,13 @@ if (isset($_POST['submit'])) {
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background: url("../imagens/fundodaora.jpeg");
         }
 
         div {
@@ -109,7 +109,7 @@ if (isset($_POST['submit'])) {
         }
     </style>
 </head>
-<body>
+<body background="imagens/fundodaora.jpeg">
     <div>
         <h2>Inscrição</h2>
         <form action="cadastro.php" method="POST">

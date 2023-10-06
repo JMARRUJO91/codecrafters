@@ -34,6 +34,7 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            background: url("../imagens/fundodaora.jpeg");
         }
         .box{
             color: white;
@@ -105,34 +106,43 @@
     </style>
 </head>
 <body>
-    <a href="sistema.php">Voltar</a>
     <div class="box">
         <form action="saveEdit.php" method="POST">
             <fieldset>
                 <legend><b>Editar Equipe</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nomes" id="nomes" class="inputUser">
+                    <input type="text" name="nomes" id="nomes" class="inputUser" value=<?php echo $nomes;?> required>
                     <label for="nomes" class="labelInput">Nome dos participantes:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="equipe" id="equipe" class="inputUser">
+                    <input type="text" name="equipe" id="equipe" class="inputUser"value=<?php echo $equipe;?> required>
                     <label for="equipe" class="labelInput">Nome da equipe:</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="modalidade" id="modalidade" class="inputUser">
+                    <input type="text" name="modalidade" id="modalidade" class="inputUser" value=<?php echo $modalidade;?> required>
                     <label for="modalidade" class="labelInput">Modalidade:</label>
                 </div>
                 <br><br>
-                <div class="inputBox">
-                    <input type="text" name="serie" id="serie" class="inputUser">
-                    <label for="serie" class="labelInput">Série:</label>
-                </div>
+                <label for="serie">Selecione a série escolar:</label>
+<input list="series" name="serie" id="serie">
+
+<datalist id="series">
+  <option value="6ºEF">
+  <option value="7ºEF">
+  <option value="8ºEF">
+  <option value="9ºEF">
+  <option value="1ºEM">
+  <option value="2ºEM">
+  <option value="3ºEM">
+</datalist>
                 <br><br>
 	<input type="hidden" name="id_coletivo" value="<?php echo $id_coletivo;?>">
     <input type="submit" name="update" id="submit" value="Atualizar">
+    <button type="submit" name="submit" value=""><a class="" href="sistema.php">Voltar</a></button>
+
             </fieldset>
         </form>
     </div>

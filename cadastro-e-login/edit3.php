@@ -32,6 +32,7 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            background: url("../imagens/fundodaora.jpeg");
         }
         .box{
             color: white;
@@ -110,13 +111,9 @@
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required>
-                    <label for="nome" class="labelInput">Nome do inscrito:</label>
+                    <label for="nome" class="labelInput">Novo Nome:</label>
                 </div>
                 <br><br>
-                <div class="inputBox">
-                    <input type="text" name="senha" id="senha" class="inputUser" value=<?php echo $senha;?> required>
-                    <label for="senha" class="labelInput">Nova senha:</label>
-                </div>
                 <section>
 <input type="hidden" name="id" value="<?php echo $id;?>">
     <input type="submit" name="update" id="submit" value="Atualizar">
