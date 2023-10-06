@@ -21,7 +21,7 @@
 
                 <img src="imagens/logo1.png" width="400" height="450">
                 <ul>
-                <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="index.html">INÍCIO</a></li>
                     <li><a href="inscricoes.php">INSCRIÇÕES</a></li>
                     <li><a href="sobre.html">SOBRE</a></li>
                     <li><a href="galeria.html">GALERIA</a></li>
@@ -39,7 +39,7 @@
             <div class="calendar">
                 <h1>Calendário</h1>
                 <div class="countdown">
-                <h2>Contagem Regressiva para 17/10/2023</h2>
+                    <h2>Contagem Regressiva para 17/10/2023</h2>
                     <div id="countdown-timer">
                         <span id="days"></span> dias
                         <span id="hours"></span> horas
@@ -72,10 +72,9 @@
             <ul>
 
                 <li>
-
-                    <a href="#"> <img class="rodapeimg" src="imagens/facebook.png" alt="Logo da Alura"> </a>
-                    <a href="#"> <img class="rodapeimg" src="imagens/logotipo-do-instagram.png" alt="Logo da Caelum"> </a>
-                    <a href="#"> <img class="rodapeimg" src="imagens/twitter.png" alt="Logo da Casa do Código"> </a>
+                    <a href="https://www.facebook.com/?locale=pt_BR"> <img class="rodapeimg" src="imagens/facebook.png" alt="Logo da Alura"></a>
+                    <a href="https://www.instagram.com/"><img class="rodapeimg" src="imagens/logotipo-do-instagram.png" alt="Logo da Caelum"></a>
+                    <a href="https://twitter.com/"> <img class="rodapeimg" src="imagens/twitter.png" alt="Logo da Casa do Código"> </a>
                     <a href="#"> <img class="rodapeimg2" src="imagens/Sesi-SP.jpg" alt="Logo do Sesi"> </a>
                     <a href="termos.html">Termos de Uso</a> |
                     <a href="politica.html">Política de Privacidade</a>

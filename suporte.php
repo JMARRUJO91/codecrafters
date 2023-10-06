@@ -93,55 +93,66 @@ if (isset($_POST['submit'])) {
                 <p>FAQ (PERGUNTAS MAIS REALIZADAS)</p>
                 <div class="accordion">
                     <div class="accordion__question">
-                        <p>PERGUNTA 1</p>
+                        <p>O que é uma competição interclasse?</p>
 
                     </div>
                     <div class="accordion__answer">
-                        <p>RESPOSTA 1</p>
+                        <p>Uma competição interclasse é um evento onde equipes
+                             de diferentes turmas ou níveis escolares competem 
+                             entre si em atividades esportivas, acadêmicas ou culturais.</p>
 
                     </div>
                 </div>
                 <div class="accordion">
                     <div class="accordion__question">
-                        <p>PERGUNTA 2</p>
+                        <p>Por que as escolas organizam competições interclasses?</p>
 
                     </div>
                     <div class="accordion__answer">
                         <p>
-                            RESPOSTA 2
+                        As escolas organizam competições interclasses para promover 
+                        o espírito de equipe, incentivar a participação dos alunos,
+                         e criar um ambiente de aprendizado divertido e competitivo.
                         </p>
 
                     </div>
                 </div>
                 <div class="accordion">
                     <div class="accordion__question">
-                        <p>PERGUNTA 3</p>
+                        <p>Que tipos de atividades são comuns em competições interclasses?</p>
 
                     </div>
                     <div class="accordion__answer">
-                        <p>RESPOSTA 3</p>
+                        <p>As atividades podem variar, mas em nossa escola são mais frequentes
+                            esportes como futebol e Vôlei, e brincadeiras como a queimada. Além disso, jogos 
+                            de tabuleiro, como xadrez, também podem 
+                            fazer parte das competições.
+</p>
+
 
                     </div>
                 </div>
 
                 <div class="accordion">
                     <div class="accordion__question">
-                        <p>PERGUNTA 4</p>
+                        <p>Todos os alunos são obrigados a participar das competições interclasses?</p>
 
                     </div>
                     <div class="accordion__answer">
-                        <p>RESPOSTA 4</p>
+                        <p>A participação geralmente é voluntária,
+                             e os alunos podem escolher se desejam participar ou não.</p>
 
                     </div>
                 </div>
 
                 <div class="accordion">
                     <div class="accordion__question">
-                        <p>PERGUNTA 5</p>
+                        <p>As competições interclasses têm prêmios?</p>
 
                     </div>
                     <div class="accordion__answer">
-                        <p>RESPOSTA 5</p>
+                        <p>Sim, algumas competições interclasses oferecem prêmios, 
+                            como medalhas para as equipes vencedoras.</p>
 
                     </div>
                 </div>
