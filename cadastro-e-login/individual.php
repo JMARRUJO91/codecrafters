@@ -18,7 +18,7 @@ if(isset($_POST['submit']))
     $telefone = $_POST['telefone'];
     
 
-    $result = mysqli_query($conexao, "INSERT INTO individual(nome,idade,modalidade,email,cidade,serie,telefone) 
+    $result = mysqli_query($conexao, "INSERT INTO individual(nome,idade,modalidade,email,cidade,serie,telefone)
     VALUES ('$nome','$idade','$modalidade','$email','$cidade','$serie','$telefone')");
 
     header('Location: individual.php');
