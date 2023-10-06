@@ -32,6 +32,7 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            background: url("../imagens/fundodaora.jpeg");
         }
         .box{
             color: white;
