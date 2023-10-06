@@ -174,7 +174,7 @@ if(isset($_POST['submit']))
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="idade" id="idade" class="inputUser" required>
+                    <input type="number" name="idade" id="idade" class="inputUser" min ="10" max="30"  required>
                     <label for="idade" class="labelInput">Idade</label>
                 </div>
                 <br><br>
@@ -193,10 +193,18 @@ if(isset($_POST['submit']))
                     <label for="cidade" class="labelInput">Cidade</label>
                 </div>
                 <br></br>
-                <div class="inputBox">
-                    <input type="text" name="serie" id="serie" class="inputUser" required>
-                    <label for="serie" class="labelInput">Série</label>
-                </div>
+                <label for="serie">Selecione a série escolar:</label>
+<input list="series" name="serie" id="serie">
+
+<datalist id="series">
+  <option value="6ºEF">
+  <option value="7ºEF">
+  <option value="8ºEF">
+  <option value="9ºEF">
+  <option value="1ºEM">
+  <option value="2ºEM">
+  <option value="3ºEM">
+</datalist>
                 <br></br>
                 <div class="inputBox">
                     <input type="text" name="telefone" id="telefone" class="inputUser" required>
