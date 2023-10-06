@@ -233,7 +233,7 @@
                 <br><br>
                 <input class="inputReturn1" type="submit" name="submit" value="Enviar">
 <br><br>
-                <a class="inputReturn2" href="indi_lista.php">Equipes</a>
+                <a class="inputReturn2" href="sistema.php">Equipes</a>
             <br><br><br>
             <a class="inputReturn3" href="confirma.php">Voltar</a>
             <br><br>
