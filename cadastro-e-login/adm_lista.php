@@ -56,7 +56,7 @@
             <thead>
                 <tr>
                     <th scope="col">Nome</th>
-                    <th scope="col">Senha</th>
+                    
                     <th scope="col">Atualizar    Deletar</th>
                 </tr>
             </thead>
@@ -65,7 +65,7 @@
                     while($user_data = mysqli_fetch_assoc($result)) {
                         echo "<tr>";
                         echo "<td>".$user_data['nome']."</td>";
-                        echo "<td>".$user_data['senha']."</td>";
+                        
                         echo "<td>
                         <a class='btn btn-sm btn-primary' href='edit3.php?id=$user_data[id]' title='Editar'>
                             <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pencil' viewBox='0 0 16 16'>

@@ -121,37 +121,37 @@
                 <legend><b>Atualizar a Inscrição Individual</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser"<?php echo $nome;?> required>
+                    <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required>
                     <label for="nome" class="labelInput">Nome completo</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="idade" id="idade" class="inputUser"<?php echo $idade;?> required>
+                    <input type="number" name="idade" id="idade" class="inputUser" value=<?php echo $idade;?> required>
                     <label for="idade" class="labelInput">Idade</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="modalidade" id="modalidade" class="inputUser"<?php echo $modalidade;?> required>
+                    <input type="text" name="modalidade" id="modalidade" class="inputUser" value=<?php echo $modalidade;?> required>
                     <label for="modalidade" class="labelInput">Modalidade</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser"<?php echo $email;?> required>
+                    <input type="email" name="email" id="email" class="inputUser" value=<?php echo $email;?> required>
                     <label for="email" class="labelInput">Email</label>
                 </div>
                 <br></br>
                 <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser"<?php echo $cidade;?> required>
+                    <input type="text" name="cidade" id="cidade" class="inputUser" value=<?php echo $cidade;?> required>
                     <label for="cidade" class="labelInput">Cidade</label>
                 </div>
                 <br></br>
                 <div class="inputBox">
-                    <input type="text" name="serie" id="serie" class="inputUser"<?php echo $serie;?> required>
+                    <input type="text" name="serie" id="serie" class="inputUser" value=<?php echo $serie;?> required>
                     <label for="serie" class="labelInput">Série</label>
                 </div>
                 <br></br>
                 <div class="inputBox">
-                    <input type="text" name="telefone" id="telefone" class="inputUser"<?php echo $telefone;?> required>
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" value=<?php echo $telefone;?> required >
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
                 <br></br>
