@@ -111,13 +111,9 @@
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required>
-                    <label for="nome" class="labelInput">Nome do inscrito:</label>
+                    <label for="nome" class="labelInput">Novo Nome:</label>
                 </div>
                 <br><br>
-                <div class="inputBox">
-                    <input type="text" name="senha" id="senha" class="inputUser" value=<?php echo $senha;?> required>
-                    <label for="senha" class="labelInput">Nova senha:</label>
-                </div>
                 <section>
 <input type="hidden" name="id" value="<?php echo $id;?>">
     <input type="submit" name="update" id="submit" value="Atualizar">
