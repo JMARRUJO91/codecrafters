@@ -106,7 +106,6 @@
     </style>
 </head>
 <body>
-    <a href="sistema.php">Voltar</a>
     <div class="box">
         <form action="saveEdit.php" method="POST">
             <fieldset>
@@ -134,6 +133,8 @@
                 <br><br>
 	<input type="hidden" name="id_coletivo" value="<?php echo $id_coletivo;?>">
     <input type="submit" name="update" id="submit" value="Atualizar">
+    <button type="submit" name="submit" value=""><a class="" href="sistema.php">Voltar</a></button>
+
             </fieldset>
         </form>
     </div>
