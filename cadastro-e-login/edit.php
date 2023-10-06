@@ -103,6 +103,26 @@
         #submit:hover{
             background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
         }
+
+        .inputReturn {
+            background-color: #dc3545;
+            border: none;
+            padding: 15px;
+            width: 80%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+        }
+
+        .inputReturn:hover {
+            background-color: #a3232e;
+        }
     </style>
 </head>
 <body>
@@ -127,7 +147,7 @@
                 </div>
                 <br><br>
                 <label for="serie">Selecione a série escolar:</label>
-<input list="series" name="serie" id="serie">
+<input list="series" name="serie" id="serie" value=<?php echo $serie;?> required>
 
 <datalist id="series">
   <option value="6ºEF">
@@ -141,8 +161,8 @@
                 <br><br>
 	<input type="hidden" name="id_coletivo" value="<?php echo $id_coletivo;?>">
     <input type="submit" name="update" id="submit" value="Atualizar">
-    <button type="submit" name="submit" value=""><a class="" href="sistema.php">Voltar</a></button>
-
+    <button class="inputReturn" href="indi_lista.php">Voltar</button>
+    <br><br>
             </fieldset>
         </form>
     </div>
