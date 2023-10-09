@@ -33,7 +33,7 @@
         }
 
         .container2 {
-            max-width: 400px;
+            max-width: 100px;
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
@@ -86,7 +86,7 @@
 
         .button-back {
             background-color: #dc3545;
-            margin-left:20px;
+            margin-left:0px;
         }
 
         .button-admin {
@@ -116,7 +116,6 @@
  
     <footer>
     <div class="container2">
-        <a class="button button-admin" href="adm_lista.php">Painel de cadastrados</a>
         <a class="button button-back" href="login.php">Voltar</a>
     </div>
 </footer>
