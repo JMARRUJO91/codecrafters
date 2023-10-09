@@ -28,6 +28,24 @@ function createCalendar() {
     }
 }
 
+function updateCountdown() {
+    const currentDate = new Date();
+    const targetDate = new Date("2023-10-17T00:50:07Z");
+
+    if (currentDate < targetDate) {
+        const timeLeft = targetDate - currentDate;
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown-timer").textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    } else {
+        document.getElementById("countdown-timer").textContent = "Já chegou o dia 17!";
+    }
+}
+
 createCalendar();
 updateCountdown();
 setInterval(updateCountdown, 1000);
