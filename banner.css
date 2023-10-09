@@ -63,3 +63,10 @@ button {
 .next-button {
     right: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores */
+    body {
+      font-size: 16px;
+    }
+  }

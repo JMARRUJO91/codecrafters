@@ -37,3 +37,11 @@
 .accordion.active .accordion__answer {
   display: block;
 }
+
+
+@media screen and (max-width: 768px) {
+  /* Estilos para telas menores */
+  body {
+    font-size: 16px;
+  }
+}

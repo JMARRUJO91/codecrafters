@@ -59,3 +59,10 @@ h1 {
 .date-cell.disabled {
     color: #ccc;
 }
+
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores */
+    body {
+      font-size: 16px;
+    }
+  }

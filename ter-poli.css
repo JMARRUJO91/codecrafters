@@ -12,3 +12,11 @@
     color: #333;
     max-width: 1300px;
 }
+
+
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores */
+    body {
+      font-size: 16px;
+    }
+  }

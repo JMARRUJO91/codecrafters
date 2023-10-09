@@ -10,3 +10,10 @@ footer {
     background-color: rgba(63, 118, 189, 1);
 }
 
+
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores */
+    body {
+      font-size: 16px;
+    }
+  }

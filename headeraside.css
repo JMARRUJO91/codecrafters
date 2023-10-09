@@ -118,3 +118,10 @@ h4 {
     padding: 20px 40px 5px 40px;
 }
 
+
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores */
+    body {
+      font-size: 16px;
+    }
+  }
