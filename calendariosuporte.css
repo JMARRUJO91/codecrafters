@@ -50,15 +50,20 @@ h1 {
 }
 
 .date-cell.current-day {
-    background-color: rgba(63, 118, 189, 1);
-    ;
-    ;
+    background-color: rgb(138, 176, 225);
     color: white;
 }
 
 .date-cell.disabled {
     color: #ccc;
 }
+
+.highlighted {
+    background-color: rgba(63, 118, 189, 1);
+    color: white; /* Define a cor vermelha para o texto do dia 17 */
+    /* Outros estilos que você desejar */
+}
+
 
 @media screen and (max-width: 768px) {
     /* Estilos para telas menores */
