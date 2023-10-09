@@ -61,11 +61,7 @@ h1 {
     /* Outros estilos que você desejar */
 }
 
-.highlighted {
-    background-color: rgba(63, 118, 189, 1);
-    color: white; /* Define a cor vermelha para o texto do dia 17 */
-    /* Outros estilos que você desejar */
-}
+
 
 
 @media screen and (max-width: 768px) {
